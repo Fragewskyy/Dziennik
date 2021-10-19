@@ -1,4 +1,4 @@
-package model.PeoplesRoles;
+package model.peoplesRoles;
 
 import model.User;
 

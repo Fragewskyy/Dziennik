@@ -1,4 +1,4 @@
-package model.PeoplesRoles;
+package model.peoplesRoles;
 
 public class Teacher {
     int teacherId;
