@@ -229,6 +229,25 @@ COLLATE = utf8mb4_0900_ai_ci;
 
 
 -- -----------------------------------------------------
+-- Table `dziennik`.`messages`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dziennik`.`messages` (
+  `message_id` INT(11) NOT NULL AUTO_INCREMENT,
+  `message_subject` LONGTEXT NOT NULL,
+  `message_text` LONGTEXT NOT NULL,
+  `date` DATETIME NOT NULL,
+  `user_id` INT(11) NOT NULL,
+  PRIMARY KEY (`message_id`),
+  INDEX `user_id7_idx` (`user_id` ASC),
+  CONSTRAINT `user_id7`
+    FOREIGN KEY (`user_id`)
+    REFERENCES `dziennik`.`users` (`user_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
 -- Table `dziennik`.`principal`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `dziennik`.`principal` (
