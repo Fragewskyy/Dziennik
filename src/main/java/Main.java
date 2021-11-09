@@ -1,8 +1,8 @@
-import view.MenuView;
+import view.StartMenu;
 
 public class Main {
 
     public static void main(String[] args) {
-        MenuView.runMenu();
+        StartMenu.runMenu();
     }
 }
