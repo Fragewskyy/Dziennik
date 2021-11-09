@@ -1,6 +1,6 @@
 package roleInterfaces;
 
 public interface AdminInterface {
-    public boolean turn0n0ffPasswordFormat();
+    public void turn0n0ffPasswordFormat();
 
 }
