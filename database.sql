@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`users` (
     FOREIGN KEY (`role_id`)
     REFERENCES `dziennik`.`role` (`role_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
+AUTO_INCREMENT = 6
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -223,6 +223,28 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`guardian` (
   CONSTRAINT `user_id3`
     FOREIGN KEY (`user_id`)
     REFERENCES `dziennik`.`users` (`user_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_0900_ai_ci;
+
+
+-- -----------------------------------------------------
+-- Table `dziennik`.`lessonperyear`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `dziennik`.`lessonperyear` (
+  `lessonPerYearId` INT(11) NOT NULL AUTO_INCREMENT,
+  `class_id` INT(11) NOT NULL,
+  `subject_id` INT(11) NOT NULL,
+  `amountOfLessons` INT(11) NOT NULL,
+  PRIMARY KEY (`lessonPerYearId`),
+  INDEX `classid_idx` (`class_id` ASC),
+  INDEX `subjectid_idx` (`subject_id` ASC),
+  CONSTRAINT `classid`
+    FOREIGN KEY (`class_id`)
+    REFERENCES `dziennik`.`classes` (`class_id`),
+  CONSTRAINT `subjectid`
+    FOREIGN KEY (`subject_id`)
+    REFERENCES `dziennik`.`subjects` (`subject_id`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
