@@ -2,21 +2,17 @@ package menues;
 
 import java.util.Scanner;
 
-public class ViewforTeacher {
-
+public class ViewForPrincipal {
     public void view(){
         System.out.println("Clik to :");
         System.out.println("x to logout");
-        System.out.println("1 to add new student");
-        System.out.println("2 to create new guardian");
-        System.out.println("3 to add student to a class");
-        System.out.println("4 to modify a grade of a student");
-        System.out.println("5 to generate a certificat");
-        System.out.println("6 to generate multiple certificats of your choice( write a list of students separeted by comms)");
-        System.out.println("7 to add a student do a guardian");
-        System.out.println("8 to verify an absence");
-        System.out.println("9 to change password");
-        System.out.println("10 to  send messege");
+        System.out.println("1 to  send messege");
+        System.out.println("3 to change password");
+        System.out.println("4 to create a new teacher");
+        System.out.println("5 to display all persons");
+        System.out.println("6 to create new class");
+        System.out.println("7 to set limit of lessons");
+        System.out.println("8 to display a list of teachers");
         Scanner scanner=new Scanner(System.in);
         String input=scanner.next();
         if (input.equals("x")) {
@@ -47,13 +43,5 @@ public class ViewforTeacher {
         if (input.equals("8")) {
             ///daosudent showabsence
         }
-        if (input.equals("9")) {
-            ///daosudent showabsence
-        }
-        if (input.equals("10")) {
-            ///daosudent showabsence
-        }
     }
-
-
 }
