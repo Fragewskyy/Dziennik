@@ -3,15 +3,15 @@ package roleInterfaces;
 import model.User;
 
 public interface TeacherInterface {
-    public void createstudent();
-    public void createguardian();
-    public void addStudenttoClass();
-    public void modifygradeforst(int userid);
-    public void generadeCertificate();
-    public void createmultiplecertificate();
-    public void addstudenttoguardian();
-    public void addstudentAbsence();
-    public void verifyabsece();
+    public void createStudent();
+    public void createGuardian();
+    public void addStudentToClass();
+    public void modifyGrade();
+    public void generateCertificate();
+    public void createMultipleCertificate();
+    public void addStudentToGuardian();
+    public void addStudentAbsence();
+    public void verifyAbsenceExcuse();
 
 
 }
