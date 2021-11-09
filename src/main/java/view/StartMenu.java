@@ -14,6 +14,6 @@ public class StartMenu {
         String passwordcheck=scanner.nextLine();
         //tutaj metoda (czy jest w bazie taki chłop z takim loginem i hasłem
         System.out.printf("witaj %s %s na dzienniku",logincheck,passwordcheck);
-        if()
+
     }
 }
