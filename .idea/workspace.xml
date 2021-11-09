@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/AdminInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/GuardianInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/The Class Book Application.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/PrincipalInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PeoplesRoles/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PeoplesRoles/Guardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Guardian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PeoplesRoles/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Principal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PeoplesRoles/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/PeoplesRoles/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/GuardianInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/GuardianInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/TeacherInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/TeacherInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MenuView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/ViewforStudent.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,24 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="interfaces" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="interfaces" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1zj8vhecDxPsU1gJ1d5NnkypdB2" />
@@ -42,6 +61,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tt\IdeaProjects\Dziennik1" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -66,10 +91,30 @@
       <option name="presentableId" value="Default" />
       <updated>1634650368412</updated>
     </task>
+    <task id="LOCAL-00001" summary="Guardian i admin interfejsy">
+      <created>1634654818706</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634654818706</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Guardian i admin interfejsy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guardian i admin interfejsy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
