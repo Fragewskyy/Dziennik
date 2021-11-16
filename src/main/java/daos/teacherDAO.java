@@ -3,7 +3,7 @@ package daos;
 import roleInterfaces.TeacherInterface;
 import roleInterfaces.UserInterface;
 
-public class teacherDAO implements TeacherInterface, UserInterface {
+public class teacherDAO implements TeacherInterface {
 
     public void createStudent() {
 
@@ -41,15 +41,5 @@ public class teacherDAO implements TeacherInterface, UserInterface {
 
     }
 
-    public void sendTextMessage() {
 
-    }
-
-    public void changePassword(String password) {
-
-    }
-
-    public void logOut() {
-
-    }
 }
