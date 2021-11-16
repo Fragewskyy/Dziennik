@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`role` (
   `role_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`role_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 2
+AUTO_INCREMENT = 7
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`users` (
     FOREIGN KEY (`role_id`)
     REFERENCES `dziennik`.`role` (`role_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 6
+AUTO_INCREMENT = 86
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -63,6 +63,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`teacher` (
     FOREIGN KEY (`user_id`)
     REFERENCES `dziennik`.`users` (`user_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 7
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -81,6 +82,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`classes` (
     FOREIGN KEY (`teacher_id`)
     REFERENCES `dziennik`.`teacher` (`teacher_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -93,6 +95,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`subjects` (
   `subject_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`subject_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 13
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -147,6 +150,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`student` (
     FOREIGN KEY (`user_id`)
     REFERENCES `dziennik`.`users` (`user_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 18
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -185,6 +189,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`admin` (
     FOREIGN KEY (`user_id`)
     REFERENCES `dziennik`.`users` (`user_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 2
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
@@ -207,6 +212,7 @@ CREATE TABLE IF NOT EXISTS `dziennik`.`grades` (
     FOREIGN KEY (`subject_id`)
     REFERENCES `dziennik`.`subjects` (`subject_id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 303
 DEFAULT CHARACTER SET = utf8mb4
 COLLATE = utf8mb4_0900_ai_ci;
 
