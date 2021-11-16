@@ -12,7 +12,7 @@ public class adminDAO implements AdminInterface, UserInterface {
 
     }
 
-    public void changePassword() {
+    public void changePassword(String password) {
 
     }
 

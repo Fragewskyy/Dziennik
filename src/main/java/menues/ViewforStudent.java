@@ -1,10 +1,14 @@
 package menues;
 
+import daos.studentDAO;
+
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class ViewforStudent {
 
-    public void view(){
+    public void view() throws SQLException {
+        studentDAO studentDAO=new studentDAO();
         System.out.println("Clik to :");
         System.out.println("x to logout");
         System.out.println("1to  send messege");
@@ -27,7 +31,9 @@ public class ViewforStudent {
             ///daosudent showabsence
         }
         if (input.equals("4")) {
-            ///daosudent showabsence
+            System.out.println("jakie nowe hasło????");
+
+            studentDAO.changePassword(scanner.next());
         }
     }
     }

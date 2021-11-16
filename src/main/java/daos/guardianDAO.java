@@ -29,7 +29,7 @@ public class guardianDAO implements GuardianInterface, UserInterface {
 
     }
 
-    public void changePassword() {
+    public void changePassword(String password) {
 
     }
 
