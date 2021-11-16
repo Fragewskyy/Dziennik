@@ -1,5 +1,6 @@
 package menues;
 
+import daos.UserDAO;
 import daos.studentDAO;
 
 import java.sql.SQLException;
@@ -7,8 +8,9 @@ import java.util.Scanner;
 
 public class ViewforStudent {
 
-    public void view() throws SQLException {
+    public void view(String login, String password) throws SQLException {
         studentDAO studentDAO=new studentDAO();
+        UserDAO userDAO=new UserDAO();
         System.out.println("Clik to :");
         System.out.println("x to logout");
         System.out.println("1to  send messege");
@@ -18,8 +20,7 @@ public class ViewforStudent {
         Scanner scanner=new Scanner(System.in);
         String input=scanner.next();
         if (input.equals("x")) {
-            System.out.println("elo");
-            System.exit(0);
+            userDAO.logOut();
         }
         if (input.equals("1")) {
             ///
@@ -32,8 +33,8 @@ public class ViewforStudent {
         }
         if (input.equals("4")) {
             System.out.println("jakie nowe hasło????");
-
-            studentDAO.changePassword(scanner.next());
+            Scanner sr=new Scanner(System.in);
+            userDAO.changePassword(sr.next(),login,password);
         }
     }
     }

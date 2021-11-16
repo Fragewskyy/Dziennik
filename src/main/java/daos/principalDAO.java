@@ -3,7 +3,7 @@ package daos;
 import roleInterfaces.PrincipalInterface;
 import roleInterfaces.UserInterface;
 
-public class principalDAO implements PrincipalInterface, UserInterface {
+public class principalDAO implements PrincipalInterface {
 
     public void createNewTeacher() {
 
@@ -29,15 +29,5 @@ public class principalDAO implements PrincipalInterface, UserInterface {
 
     }
 
-    public void sendTextMessage() {
 
-    }
-
-    public void changePassword(String password) {
-
-    }
-
-    public void logOut() {
-
-    }
 }

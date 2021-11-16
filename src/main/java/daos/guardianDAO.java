@@ -3,7 +3,7 @@ package daos;
 import roleInterfaces.GuardianInterface;
 import roleInterfaces.UserInterface;
 
-public class guardianDAO implements GuardianInterface, UserInterface {
+public class guardianDAO implements GuardianInterface {
 
     public void displayGrades() {
 
@@ -25,15 +25,5 @@ public class guardianDAO implements GuardianInterface, UserInterface {
 
     }
 
-    public void sendTextMessage() {
 
-    }
-
-    public void changePassword(String password) {
-
-    }
-
-    public void logOut() {
-
-    }
 }
