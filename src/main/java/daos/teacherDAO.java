@@ -45,7 +45,7 @@ public class teacherDAO implements TeacherInterface, UserInterface {
 
     }
 
-    public void changePassword() {
+    public void changePassword(String password) {
 
     }
 

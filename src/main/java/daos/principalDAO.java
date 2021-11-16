@@ -33,7 +33,7 @@ public class principalDAO implements PrincipalInterface, UserInterface {
 
     }
 
-    public void changePassword() {
+    public void changePassword(String password) {
 
     }
 
