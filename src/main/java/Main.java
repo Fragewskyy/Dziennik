@@ -19,10 +19,11 @@ public class Main {
         ViewforGuardian viewforGuardian=new ViewforGuardian();
         ViewForPrincipal viewForPrincipal=new ViewForPrincipal();
         ViewforTeacher viewforTeacher=new ViewforTeacher();
+        Show_sample_text();
         Scanner scanner=new Scanner(System.in);
         String login=scanner.next();
         String password=scanner.next();
-        Show_sample_text();
+
         switch (Integer.parseInt(SQLmanager.showRoleby_Login_password(login,password))) {
             case 1:
                 viewforStudent.view(login,password);
