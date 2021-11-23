@@ -1,6 +1,6 @@
 package daos;
 
-public class SQLmanager {
+public class SQLconector {
     static String url="jdbc:mysql://localhost:3306/dziennik";
     static String name="root";
     static String password="zxcv";
@@ -11,7 +11,7 @@ public class SQLmanager {
     }
 
     public static void setUrl(String url) {
-        SQLmanager.url = url;
+        SQLconector.url = url;
     }
 
     public static String getName() {
@@ -19,7 +19,7 @@ public class SQLmanager {
     }
 
     public static void setName(String name) {
-        SQLmanager.name = name;
+        SQLconector.name = name;
     }
 
     public static String getPassword() {
@@ -27,6 +27,6 @@ public class SQLmanager {
     }
 
     public static void setPassword(String password) {
-        SQLmanager.password = password;
+        SQLconector.password = password;
     }
 }
