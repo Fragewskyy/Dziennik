@@ -19,23 +19,24 @@ public class ViewforStudent {
         System.out.println("4 to change password");
         Scanner scanner=new Scanner(System.in);
         String input=scanner.next();
-        if (input.equals("x")) {
-            userDAO.logOut();
-        }
-        if (input.equals("1")) {
-            ///
-        }
-        if (input.equals("2")) {
-            ///daosudent showgrades
-        }
-        if (input.equals("3")) {
-            ///daosudent showabsence
-        }
-        if (input.equals("4")) {
-            System.out.println("jakie nowe hasło????");
-            Scanner sr=new Scanner(System.in);
-            userDAO.changePassword(sr.next(),login,password);
-        }
+        while (input!="x")
+
+            if (input.equals("1")) {
+                userDAO.sendTextMessage(login,password);
+
+            }
+            if (input.equals("2")) {
+                studentDAO.displayAllGrades();
+            }
+            if (input.equals("3")) {
+                studentDAO.displayAbsences();
+            }
+            if (input.equals("4")) {
+                System.out.println("jakie nowe hasło????");
+                Scanner sr=new Scanner(System.in);
+                userDAO.changePassword(sr.next(),login,password);
+            }
+            input=scanner.next();
     }
     }
 
