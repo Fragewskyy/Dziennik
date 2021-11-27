@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daos/SQLmanager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/SQLmanager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/daos/studentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/studentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Fix" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637693535583</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Naprawiłem błąd przy ładowaniu view i wszystko śmiga">
+      <created>1638029162034</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638029162034</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,7 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Guardian i admin interfejsy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guardian i admin interfejsy" />
+    <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
+    <option name="LAST_COMMIT_MESSAGE" value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
