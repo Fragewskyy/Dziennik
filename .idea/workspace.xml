@@ -39,7 +39,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Fix" />
+        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638029162034</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Wyświetla od teraz oceny">
+      <created>1638030979928</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638030979928</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +154,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
-    <option name="LAST_COMMIT_MESSAGE" value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
+    <MESSAGE value="Wyświetla od teraz oceny" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

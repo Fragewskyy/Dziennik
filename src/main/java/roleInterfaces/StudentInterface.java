@@ -4,5 +4,5 @@ import java.sql.SQLException;
 
 public interface StudentInterface {
     public void displayAllGrades(String login, String password) throws SQLException;
-    public void displayAbsences();
+    public void displayAbsences(String login, String password) throws SQLException;
 }
