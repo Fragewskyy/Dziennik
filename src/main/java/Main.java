@@ -1,30 +1,29 @@
 import daos.*;
 import menues.*;
 
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.Scanner;
 
 public class Main {
-    public static void Show_sample_text(){
-        System.out.println("witamy na dzienniku lelktronicznym!!!");
-        System.out.println("login:");
-        System.out.println("password:");
-    }
-
 
 
     public static void main(String[] args) throws SQLException {
-        ViewforStudent viewforStudent=new ViewforStudent();
-        ViewForAdmin viewForAdmin=new ViewForAdmin();
-        ViewforGuardian viewforGuardian=new ViewforGuardian();
-        ViewForPrincipal viewForPrincipal=new ViewForPrincipal();
-        ViewforTeacher viewforTeacher=new ViewforTeacher();
-        Show_sample_text();
-        Scanner scanner=new Scanner(System.in);
-        String login=scanner.next();
-        String password=scanner.next();
 
-        switch (Integer.parseInt(SQLmanager.showRoleby_Login_password(login,password))) {
+
+        ViewforStudent viewforStudent = new ViewforStudent();
+        ViewForAdmin viewForAdmin = new ViewForAdmin();
+        ViewforGuardian viewforGuardian = new ViewforGuardian();
+        ViewForPrincipal viewForPrincipal = new ViewForPrincipal();
+        ViewforTeacher viewforTeacher = new ViewforTeacher();
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Witamy w dzienniku elektronicznym!");
+        System.out.println("Podaj twój login: ");
+        String login = scanner.next();
+        System.out.println("Podaj twoje hasło: ");
+        String password = scanner.next();
+
+        switch (SQLmanager.showRoleByLoginPassword(login,password)) {
             case 1:
                 viewforStudent.view(login,password);
                 break;
@@ -41,6 +40,10 @@ public class Main {
                 viewForAdmin.view();
                 break;
         }
+//        Podaj twój login:
+//        eandrys0@virginia.edu
+//        Podaj twoje hasło:
+//        6T90fyNtNaw
 
 
     }
