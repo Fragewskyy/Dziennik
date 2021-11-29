@@ -23,13 +23,12 @@ public class ViewforStudent {
 
             if (input.equals("1")) {
                 userDAO.sendTextMessage(login, password);
-
             }
             if (input.equals("2")) {
                 studentDAO.displayAllGrades(login, password);
             }
             if (input.equals("3")) {
-                studentDAO.displayAbsences();
+                studentDAO.displayAbsences(login, password);
             }
             if (input.equals("4")) {
                 System.out.println("jakie nowe hasło????");
