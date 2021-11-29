@@ -2,8 +2,10 @@ package roleInterfaces;
 
 import model.User;
 
+import java.sql.SQLException;
+
 public interface TeacherInterface {
-    public void createStudent();
+    public void createStudent() throws SQLException;
     public void createGuardian();
     public void addStudentToClass();
     public void modifyGrade();

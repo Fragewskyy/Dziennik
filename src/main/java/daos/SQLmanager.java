@@ -22,6 +22,15 @@ public class SQLmanager {
         resultSet.next();
         return resultSet.getInt("role_id");
     }
+    public static String  find_ClassId_Byname(String classname) throws SQLException {
+        String query="SELECT dziennik.clases_id FROM dziennik.clases WHERE clases.class_name=`"+classname+"`;";
+        Connection connection= DriverManager.getConnection(SQLconector.getUrl(), SQLconector.getName(), SQLconector.getPassword());
+        Statement statement=connection.createStatement();
+        ResultSet resultSet=statement.executeQuery(query);
+
+        return resultSet.getString("class_id");
+    }
+
 
 
 
