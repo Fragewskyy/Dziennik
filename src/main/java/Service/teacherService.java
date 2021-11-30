@@ -1,7 +1,6 @@
-package daos;
+package Service;
 
 import roleInterfaces.TeacherInterface;
-import roleInterfaces.UserInterface;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class teacherDAO implements TeacherInterface {
+public class teacherService implements TeacherInterface {
 
     public void createStudent() throws SQLException {
         Scanner scanner=new Scanner(System.in);

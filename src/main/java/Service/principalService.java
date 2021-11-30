@@ -1,9 +1,8 @@
-package daos;
+package Service;
 
 import roleInterfaces.PrincipalInterface;
-import roleInterfaces.UserInterface;
 
-public class principalDAO implements PrincipalInterface {
+public class principalService implements PrincipalInterface {
 
     public void createNewTeacher() {
 

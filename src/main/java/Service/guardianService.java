@@ -1,9 +1,8 @@
-package daos;
+package Service;
 
 import roleInterfaces.GuardianInterface;
-import roleInterfaces.UserInterface;
 
-public class guardianDAO implements GuardianInterface {
+public class guardianService implements GuardianInterface {
 
     public void displayGrades() {
 

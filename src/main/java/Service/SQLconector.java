@@ -1,4 +1,4 @@
-package daos;
+package Service;
 
 public class SQLconector {
     static String url="jdbc:mysql://localhost:3306/dziennik";

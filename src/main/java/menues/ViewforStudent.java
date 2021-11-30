@@ -1,7 +1,7 @@
 package menues;
 
-import daos.UserDAO;
-import daos.studentDAO;
+import Service.UserService;
+import Service.studentSevice;
 
 import java.sql.SQLException;
 import java.util.Scanner;
@@ -9,8 +9,8 @@ import java.util.Scanner;
 public class ViewforStudent {
 
     public void view(String login, String password) throws SQLException {
-        studentDAO studentDAO=new studentDAO();
-        UserDAO userDAO=new UserDAO();
+        studentSevice studentDAO=new studentSevice();
+        UserService userDAO=new UserService();
         System.out.println("Click :");
         System.out.println("- 'x' -> logout");
         System.out.println("- 1 -> Send message");
