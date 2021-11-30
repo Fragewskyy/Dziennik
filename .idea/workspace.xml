@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/ClassDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/SQLconector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/SQLconector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wysyła od teraz wiadomości!">
+      <created>1638284320829</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638284320829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,7 +165,8 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
+    <MESSAGE value="wysyła od teraz wiadomości!" />
+    <option name="LAST_COMMIT_MESSAGE" value="wysyła od teraz wiadomości!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

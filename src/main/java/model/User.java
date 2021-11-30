@@ -1,8 +1,8 @@
 package model;
 
 public class User {
-    String name;
-    String surname;
-    String login;
-    String password;
+    public String name;
+    public String surname;
+    public String login;
+    public String password;
 }
