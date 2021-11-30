@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/GradesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/MessegeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/SubjectDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Messege.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menues/ViewforTeacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/UserInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

@@ -22,7 +22,7 @@ public class ViewforStudent {
         while (input!="x") {
 
             if (input.equals("1")) {
-                userDAO.sendTextMessage(login, password);
+                userDAO.sendTextMessage();
             }
             if (input.equals("2")) {
                 studentDAO.displayAllGrades(login, password);

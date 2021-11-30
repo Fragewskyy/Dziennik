@@ -1,5 +1,6 @@
 package Service;
 
+import DAO.MessegeDAO;
 import roleInterfaces.UserInterface;
 
 import java.sql.*;
@@ -8,18 +9,10 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class UserService implements UserInterface {
-    public void sendTextMessage(String login,String password) throws SQLException {
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Type login of message recipient; ");
-        String recipientLogin = scanner.next();
-        System.out.println("Type subject of message: ");
-        String subject = scanner.next();
-        System.out.println("Type message: ");
-        String messageText = scanner.next();
-        Date date = new Date();
-        String modifiedDate = new SimpleDateFormat("yyyy-MM-dd").format(date);
+    public void sendTextMessage() throws SQLException {
 
-        String query="INSERT INTO messages(message_subject, message_text, date, user_id) VALUES ('" + subject + "', '" + messageText + "', '" + modifiedDate + "', (SELECT user_id FROM users WHERE login = '" + recipientLogin + "'));" ;
+
+        String query= MessegeDAO.createmessege();
         Connection connection= DriverManager.getConnection(SQLconector.getUrl(), SQLconector.getName(), SQLconector.getPassword());
         Statement statement=connection.createStatement();
         statement.executeUpdate(query);
