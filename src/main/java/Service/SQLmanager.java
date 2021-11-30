@@ -1,6 +1,4 @@
-package daos;
-
-import daos.SQLconector;
+package Service;
 
 import java.sql.*;
 

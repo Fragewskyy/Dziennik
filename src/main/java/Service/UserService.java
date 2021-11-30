@@ -1,11 +1,11 @@
-package daos;
+package Service;
 
 import roleInterfaces.UserInterface;
 
 import java.sql.*;
 import java.util.Scanner;
 
-public class UserDAO implements UserInterface {
+public class UserService implements UserInterface {
     public void sendTextMessage(String login,String password) throws SQLException {
         Scanner scanner=new Scanner(System.in);
         System.out.println("Do kogo piszemy warjacie??, podaj login");

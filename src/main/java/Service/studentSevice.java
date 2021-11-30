@@ -1,11 +1,10 @@
-package daos;
+package Service;
 
 import roleInterfaces.StudentInterface;
-import roleInterfaces.UserInterface;
 
 import java.sql.*;
 
-public class studentDAO implements StudentInterface {
+public class studentSevice implements StudentInterface {
     public void displayAllGrades(String login, String password) throws SQLException {
 
         Connection connection = DriverManager.getConnection(SQLconector.getUrl(), SQLconector.getName(),

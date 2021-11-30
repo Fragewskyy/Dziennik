@@ -5,10 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/AdminDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/GuardianDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/PrincipalDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/daos/studentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/daos/studentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/SQLconector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/SQLconector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/SQLmanager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/SQLmanager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/adminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/adminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/guardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/guardianService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/principalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/principalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/studentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/studentSevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/daos/teacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/teacherService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforTeacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menues/ViewforTeacher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -39,7 +55,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -138,6 +154,9 @@
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sql" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
