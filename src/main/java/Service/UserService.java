@@ -3,24 +3,27 @@ package Service;
 import roleInterfaces.UserInterface;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class UserService implements UserInterface {
     public void sendTextMessage(String login,String password) throws SQLException {
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Do kogo piszemy warjacie??, podaj login");
-        String someoneslogin=scanner.next();
-        System.out.println("jaki temat");
-        String subject=scanner.next();
-        System.out.println("treść wiadomości");
-        String textmessege=scanner.next();
+        System.out.println("Type login of message recipient; ");
+        String recipientLogin = scanner.next();
+        System.out.println("Type subject of message: ");
+        String subject = scanner.next();
+        System.out.println("Type message: ");
+        String messageText = scanner.next();
+        Date date = new Date();
+        String modifiedDate = new SimpleDateFormat("yyyy-MM-dd").format(date);
 
-        String query="INSERT INTO dziennik.messeges(messege_subject,messege_text) " +
-                "VALUSE('"+subject+"','"+textmessege+"','"+SQLmanager.findidbylogin(someoneslogin)+");" ;
+        String query="INSERT INTO messages(message_subject, message_text, date, user_id) VALUES ('" + subject + "', '" + messageText + "', '" + modifiedDate + "', (SELECT user_id FROM users WHERE login = '" + recipientLogin + "'));" ;
         Connection connection= DriverManager.getConnection(SQLconector.getUrl(), SQLconector.getName(), SQLconector.getPassword());
         Statement statement=connection.createStatement();
         statement.executeUpdate(query);
-        System.out.println("wysłałeś wiadomość");
+        System.out.println("Message sent");
 
     }
 
@@ -29,7 +32,7 @@ public class UserService implements UserInterface {
         Connection connection= DriverManager.getConnection(SQLconector.getUrl(), SQLconector.getName(), SQLconector.getPassword());
         Statement statement=connection.createStatement();
         statement.executeUpdate(query);
-        System.out.println("ustawiłeś  nowe hasło:"+newpassword);
+        System.out.println("ustawiłeś nowe hasło:"+newpassword);
 
 
     }
