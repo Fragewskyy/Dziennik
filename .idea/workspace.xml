@@ -4,64 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="dodalem funkcję createstudent">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/AddStudentToGuardian.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CreateNewStudentAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateMultipleCertificateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/VerifyStudentsAbsenceAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/UserActions/ChangePasswordAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/UserActions/LogOutAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/GuardianDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/PrincipalDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/StudentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/TeacherDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Repository/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/AdminView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/GuardianView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/PrincipalView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/StudentView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/TeacherView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/UserView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/ClassDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/GuardianDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/PrincipalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/PrincipalDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rubbish/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/SQLconector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/SQLmanager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/adminService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/guardianService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/principalService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/studentSevice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/teacherService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewForAdmin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewForPrincipal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforGuardian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforStudent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menues/ViewforTeacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/AdminInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/GuardianInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/PrincipalInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/StudentInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/TeacherInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/roleInterfaces/UserInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -92,7 +42,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,6 +67,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tt\Desktop\Dziennikdddddd\src\main\java" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -168,7 +121,28 @@
       <option name="project" value="LOCAL" />
       <updated>1637074218128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Guardian i admin interfejsy">
+      <created>1637693535583</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1637693535583</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Naprawiłem błąd przy ładowaniu view i wszystko śmiga">
+      <created>1638029162034</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638029162034</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Wyświetla od teraz oceny">
+      <created>1638030979928</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638030979928</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,8 +159,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Guardian i admin interfejsy" />
-    <MESSAGE value="dodalem funkcję createstudent" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodalem funkcję createstudent" />
+    <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
+    <MESSAGE value="Wyświetla od teraz oceny" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

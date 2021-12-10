@@ -2,15 +2,19 @@ package Repository;
 
 
 
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 public interface Dao<T> {
 
-    String get( int id);
+    String get(int id) throws SQLException;
 
-    String  getAll();
+    ArrayList<T> getAll() throws SQLException;
 
-    void save(T t);
+    void save(T t) throws SQLException;
 
-    void update(int id);
+    void update(int id) throws SQLException;
 
-    void delete(int id);
+    void delete(int id) throws SQLException;
 }
