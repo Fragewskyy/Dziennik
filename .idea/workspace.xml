@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" beforeDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="dobra chłopie nie chce mi się dalej , masz to  co  zrbiłem , eooo dobrze to jest ??">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DemonstrateIfmystudenthavelowgrades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DisplayAllAbsenceOfMyStudents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExecuteAllmarks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/GenerateReportsForStudentswhoFailAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/AddStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CreateNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +51,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,9 +76,6 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tt\Desktop\Dziennikdddddd\src\main\java" />
-    </key>
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="Repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -142,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wysyła od teraz wiadomości!">
+      <created>1638284320829</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638284320829</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +174,8 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
+    <MESSAGE value="wysyła od teraz wiadomości!" />
+    <option name="LAST_COMMIT_MESSAGE" value="wysyła od teraz wiadomości!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
