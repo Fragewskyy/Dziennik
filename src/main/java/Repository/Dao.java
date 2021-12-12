@@ -12,8 +12,6 @@ public interface Dao<T> {
 
     ArrayList<T> getAll() throws SQLException;
 
-    void save(T t) throws SQLException;
-
     void update(int id) throws SQLException;
 
     void delete(int id) throws SQLException;

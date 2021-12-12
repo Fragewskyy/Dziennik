@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/SQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_11_2021_19_04__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/GuardianDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/PrincipalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/PrincipalDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Guardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Guardian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,10 +43,11 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DisplayGrades" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1zj8vhecDxPsU1gJ1d5NnkypdB2" />
   <component name="ProjectLevelVcsManager">
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="AdminDAO done!">
+      <created>1639133018059</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639133018059</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,7 +170,8 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
+    <MESSAGE value="AdminDAO done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="AdminDAO done!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
