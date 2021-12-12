@@ -36,18 +36,6 @@ public class AdminDAO implements Dao {
     }
 
     @Override
-    public void save(Object o) throws SQLException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Podaj user_id nowego admina: ");
-        int u = scanner.nextInt();
-        String query = "INSERT INTO dziennik.admin (user_id) VALUES (" + u + ");";
-        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
-        Statement statement = connection.createStatement();
-        statement.executeQuery(query);
-    }
-
-    @Override
     public void update(int id) throws SQLException {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Podaj nowe user_id: ");
@@ -63,6 +51,14 @@ public class AdminDAO implements Dao {
     @Override
     public void delete(int id) throws SQLException {
         String query = "DELETE FROM dziennik.admin WHERE admin_id = " + id + ";";
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
+                SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
+        statement.executeQuery(query);
+    }
+
+    public void save(Admin admin) throws SQLException {
+        String query = "INSERT INTO dziennik.admin (user_id) VALUES (" + admin.admin_id + ");";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();

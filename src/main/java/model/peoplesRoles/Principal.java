@@ -1,8 +1,11 @@
 package model.peoplesRoles;
 
-import model.User;
-
 public class Principal {
-    int principalId;
-    User user;
+    public int principalId;
+    public int userId;
+
+    public Principal(int principalId, int userId) {
+        this.principalId = principalId;
+        this.userId = userId;
+    }
 }
