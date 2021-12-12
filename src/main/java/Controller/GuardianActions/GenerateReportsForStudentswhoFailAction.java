@@ -1,8 +1,8 @@
-package Controller.TeacherActions;
+package Controller.GuardianActions;
 
 import Controller.Action;
 
-public class CreateNewStudentAction implements Action {
+public class GenerateReportsForStudentswhoFailAction implements Action {
     @Override
     public void executeQuery() {
 

@@ -1,8 +1,8 @@
-package Controller.TeacherActions;
+package Controller.GuardianActions;
 
 import Controller.Action;
 
-public class GenerateMultipleCertificateAction implements Action {
+public class ExecuteAllmarksAction implements Action {
     @Override
     public void executeQuery() {
 

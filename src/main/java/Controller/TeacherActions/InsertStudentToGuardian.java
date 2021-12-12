@@ -2,7 +2,7 @@ package Controller.TeacherActions;
 
 import Controller.Action;
 
-public class AddStudentToGuardian implements Action {
+public class InsertStudentToGuardian implements Action {
     @Override
     public void executeQuery() {
 
