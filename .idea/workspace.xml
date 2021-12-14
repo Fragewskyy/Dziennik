@@ -4,7 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/MianVeiw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminActions/TurnOffOnpasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExecuteAllmarksAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/GenerateReportsForStudentswhoFailAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/SendExcuseToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateStudentCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/InsertStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/ModifyGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/VerifyStudentsAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/LogOutAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AdminDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Dao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/PrincipalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PrincipalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/GuardianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GuardianView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/PrincipalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PrincipalView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/StudentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/StudentView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/TeacherView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/AdminDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/ClassDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/GuardianDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/PrincipalDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/StudentDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/TeacherDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/UserDAO.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +75,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -34,7 +96,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="principaldao" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
