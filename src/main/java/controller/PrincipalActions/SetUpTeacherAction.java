@@ -9,7 +9,7 @@ public class SetUpTeacherAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "create new Teacher";
     }
 }

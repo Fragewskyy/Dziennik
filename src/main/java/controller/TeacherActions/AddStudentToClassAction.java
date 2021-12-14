@@ -9,7 +9,8 @@ public class AddStudentToClassAction implements Action {
     }
 
     @Override
-    public void getlabel() {
+    public String getlabel() {
 
+        return null;
     }
 }

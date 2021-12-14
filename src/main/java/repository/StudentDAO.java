@@ -1,28 +1,27 @@
 package repository;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 public class StudentDAO implements Dao{
+
     @Override
-    public String get(int id) {
+    public String get(int id) throws SQLException {
         return null;
     }
 
     @Override
-    public String getAll() {
+    public ArrayList getAll() throws SQLException {
         return null;
     }
 
     @Override
-    public void save(Object o) {
+    public void update(int id) throws SQLException {
 
     }
 
     @Override
-    public void update(int id) {
-
-    }
-
-    @Override
-    public void delete(int id) {
+    public void delete(int id) throws SQLException {
 
     }
 }

@@ -9,7 +9,8 @@ public class SendTextMessegeAction implements Action {
     }
 
     @Override
-    public void getlabel() {
+    public String getlabel() {
 
+        return null;
     }
 }

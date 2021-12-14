@@ -1,8 +1,8 @@
-package view;
+package View;
 
 public interface View {
-    String readString(String label);
-    int readInt(String label);
-    void info(String message);
+    public String readString(String label);
+    public int readInt(String label);
+    public void info(String message);
 
 }

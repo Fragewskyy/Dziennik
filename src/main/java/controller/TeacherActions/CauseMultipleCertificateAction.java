@@ -9,7 +9,7 @@ public class CauseMultipleCertificateAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "Create multiple certificates";
     }
 }

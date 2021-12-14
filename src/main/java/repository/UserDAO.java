@@ -1,32 +1,31 @@
 package repository;
 
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 public class UserDAO implements Dao{
-    @Override
-    public String get(int id) {
-        return null;
-    }
 
-    @Override
-    public String getAll() {
-        return null;
-    }
-
-    @Override
-    public void save(Object o) {
-
-    }
-
-    @Override
-    public void update(int id) {
-
-    }
-
-    @Override
-    public void delete(int id) {
-
-    }
     public String getrolebyLogin(String Login){
         return "";
     }
 
+    @Override
+    public String get(int id) throws SQLException {
+        return null;
+    }
+
+    @Override
+    public ArrayList getAll() throws SQLException {
+        return null;
+    }
+
+    @Override
+    public void update(int id) throws SQLException {
+
+    }
+
+    @Override
+    public void delete(int id) throws SQLException {
+
+    }
 }

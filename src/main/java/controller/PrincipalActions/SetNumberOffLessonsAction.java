@@ -9,7 +9,7 @@ public class SetNumberOffLessonsAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "Set number of lessons";
     }
 }

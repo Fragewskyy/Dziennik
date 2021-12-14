@@ -4,68 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/MianVeiw.java" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="szkieleciki akcjj zrobione">
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminActions/TurnOffOnpasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExecuteAllmarksAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/GenerateReportsForStudentswhoFailAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/SendExcuseToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/GenerateStudentCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/InsertStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/ModifyGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TeacherActions/VerifyStudentsAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/LogOutAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/AdminDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/AdminDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/Dao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/Dao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/PrincipalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/PrincipalDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/AdminView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/GuardianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GuardianView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/PrincipalView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/PrincipalView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/StudentView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/StudentView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/TeacherView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/TeacherView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/UserView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/AdminDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/ClassDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/GuardianDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/PrincipalDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/StudentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/TeacherDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rubbish/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdminView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GuardianView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MianVeiw.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/PrincipalView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/StudentView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/TeacherView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/UserView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLconector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/adminDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/guardianDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/principalDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/studentDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewForAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewForPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforGuardian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforStudent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforTeacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Guardian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Principal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/AdminInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/GuardianInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/PrincipalInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/StudentInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/UserInterface.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1zj8vhecDxPsU1gJ1d5NnkypdB2" />
   <component name="ProjectLevelVcsManager">
@@ -111,7 +112,6 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -140,7 +140,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -199,21 +198,7 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <task id="LOCAL-00007" summary="AdminDAO done!">
-      <created>1639133018059</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1639133018059</updated>
-    </task>
-    <task id="LOCAL-00008" summary="guardiandao, PrincipalDAO.java done!">
-      <created>1639341381752</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1639341381752</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,9 +217,7 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <MESSAGE value="AdminDAO done!" />
-    <MESSAGE value="guardiandao, PrincipalDAO.java done!" />
-    <option name="LAST_COMMIT_MESSAGE" value="guardiandao, PrincipalDAO.java done!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
