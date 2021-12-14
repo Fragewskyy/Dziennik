@@ -9,7 +9,7 @@ public class ModifyGradeAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "modify grade ";
     }
 }

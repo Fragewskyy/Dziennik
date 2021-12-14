@@ -9,7 +9,7 @@ public class MakeNewStudentAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "Make new Student";
     }
 }

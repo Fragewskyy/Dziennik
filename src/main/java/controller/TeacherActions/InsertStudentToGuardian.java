@@ -9,7 +9,7 @@ public class InsertStudentToGuardian implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "insert Student to Guardian";
     }
 }

@@ -2,23 +2,22 @@
 import config.Config;
 import config.Configchanger;
 
-import config.Menu;
+import view.MainView;
+import view.Menu;
 import controller.Action;
-import view.MianVeiw;
 
 
 import java.sql.*;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String[] args) throws SQLException {
-        MianVeiw mianVeiw=new MianVeiw();
+        MainView mianVeiw=new MainView();
         mianVeiw.sampletext();
-        String login= mianVeiw.readLogin();
-        String password= mianVeiw.readPasword();
+        String login= mianVeiw.readlogin();
+        String password= mianVeiw.readPassword();
         Config config= Configchanger.inicializeConfig(login);
         List<Action> actions= config.inicializactions();
         while(true) {
