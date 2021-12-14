@@ -10,6 +10,6 @@ public class DisplayyAllPersonsAction implements Action {
 
     @Override
     public String  getlabel() {
-        return ""
+        return "Displayy All Persons";
     }
 }

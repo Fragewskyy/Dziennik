@@ -9,7 +9,7 @@ public class ExecuteClassesAndStudentsAction implements Action {
     }
 
     @Override
-    public void getlabel() {
-
+    public String getlabel() {
+        return "Execute Classe sAnd Student";
     }
 }
