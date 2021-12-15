@@ -9,14 +9,14 @@ import java.util.Scanner;
 
 public class AdminDAO implements Dao {
     @Override
-    public Admin get(int id) throws SQLException {
+    public String get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.admin WHERE admin_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
-        return new Admin(resultSet.getInt("admin_id"), resultSet.getInt("user_id"));
+        return "Admin ID: " + resultSet.getString("admin_id");
     }
 
     @Override
