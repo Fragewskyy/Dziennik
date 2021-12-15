@@ -9,14 +9,15 @@ import java.util.Scanner;
 
 public class GuardianDAO implements Dao{
     @Override
-    public String get(int id) throws SQLException {
+    public Guardian get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.guardian WHERE guardian_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
-        return resultSet.getString("admin_id");
+        return new Guardian(resultSet.getInt("guardian_id"), resultSet.getString("phone_number"), resultSet.getInt(
+                "user_id"));
     }
 
     @Override
@@ -53,7 +54,7 @@ public class GuardianDAO implements Dao{
         System.out.print("Type new phone number to guardian: ");
         String p = scanner.next();
         String query =
-                "UPDATE dziennik.guardian SET user_id = " + u + " AND phonenumber = '" + p + "' WHERE admin_id = " + id + ";";
+                "UPDATE dziennik.guardian SET user_id = " + u + ", phonenumber = '" + p + "' WHERE admin_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
