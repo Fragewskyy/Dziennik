@@ -8,6 +8,9 @@ public class UserDAO implements Dao{
     public String getrolebyLogin(String Login){
         return "";
     }
+    public String getId(){return null;
+        ////jak byś to zrobił to git
+    }
 
     @Override
     public String get(int id) throws SQLException {

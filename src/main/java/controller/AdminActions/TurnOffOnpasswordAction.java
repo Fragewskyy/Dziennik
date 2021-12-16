@@ -10,6 +10,6 @@ public class TurnOffOnpasswordAction implements Action {
 
     @Override
     public String getlabel() {
-        return "TurnOffOnpassword";
+        return "Turn Off or On password";
     }
 }

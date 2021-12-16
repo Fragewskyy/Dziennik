@@ -20,8 +20,10 @@ public class Configchanger {
             case "student":
                 return new StudentConfig();
         }
+        /**
         System.out.println("narazie nie działa niestety :(");
         System.exit(0);
+         **/
         return new TeacherConfig();
     }
 }

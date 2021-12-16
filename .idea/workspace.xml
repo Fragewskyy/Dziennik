@@ -4,70 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="szkieleciki akcjj zrobione">
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/ConsoleView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="jestem złodziejem ale z gracją więc no">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/VerifyStudentsAbsenceAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/LogOutAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/AdminView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/GuardianView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/MianVeiw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/PrincipalView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/StudentView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/TeacherView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/UserView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLconector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/SQLmanager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/UserDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/adminDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/guardianDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/principalDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/studentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/daos/teacherDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewForAdmin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewForPrincipal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforGuardian.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforStudent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menues/ViewforTeacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Role.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Guardian.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Principal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/AdminInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/GuardianInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/PrincipalInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/StudentInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/TeacherInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/roleInterfaces/UserInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +51,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/configsanag" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -198,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jestem złodziejem ale z gracją więc no">
+      <created>1639506940848</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639506940848</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +177,8 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wyświetla od teraz oceny" />
+    <MESSAGE value="jestem złodziejem ale z gracją więc no" />
+    <option name="LAST_COMMIT_MESSAGE" value="jestem złodziejem ale z gracją więc no" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

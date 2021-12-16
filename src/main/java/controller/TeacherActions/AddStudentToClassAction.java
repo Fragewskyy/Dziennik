@@ -11,6 +11,6 @@ public class AddStudentToClassAction implements Action {
     @Override
     public String getlabel() {
 
-        return null;
+        return " add student to class";
     }
 }
