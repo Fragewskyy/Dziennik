@@ -10,6 +10,6 @@ public class DisplayAllGradesAction implements Action {
 
     @Override
     public String getlabel() {
-        return null;
+        return "Display all grades";
     }
 }

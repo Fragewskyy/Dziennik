@@ -11,6 +11,6 @@ public class SendTextMessegeAction implements Action {
     @Override
     public String getlabel() {
 
-        return null;
+        return "Send text messege";
     }
 }

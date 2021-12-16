@@ -11,13 +11,21 @@ import java.sql.*;
 import java.util.List;
 
 public class Main {
+    public static String login;
+    public static String password;
 
+    public static String getlogin(){
+        return login;
+    }
+    public static String getpassword(){
+        return password;
+    }
 
     public static void main(String[] args) throws SQLException {
-        MainView mianVeiw=new MainView();
-        mianVeiw.sampletext();
-        String login= mianVeiw.readlogin();
-        String password= mianVeiw.readPassword();
+
+        MainView.sampletext();
+        login= MainView.readlogin();
+        password=MainView.readPassword();
         Config config= Configchanger.inicializeConfig(login);
         List<Action> actions= config.inicializactions();
         while(true) {
@@ -31,6 +39,7 @@ public class Main {
 
 
     }
+
 
 
 }

@@ -10,6 +10,6 @@ public class ShowAllAbsenceAction implements Action {
 
     @Override
     public String getlabel() {
-        return null;
+        return "show all absence ";
     }
 }
