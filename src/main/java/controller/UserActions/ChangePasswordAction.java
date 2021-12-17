@@ -3,6 +3,7 @@ package controller.UserActions;
 import controller.Action;
 import controller.SQLController;
 import repository.UserDAO;
+import view.MainView;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -17,7 +18,12 @@ public class ChangePasswordAction implements Action {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What new password do you want??");
         String newpassword = scanner.next();
-        String userId=userDAO.getId();
+        String userId= null;
+        try {
+            userId = String.valueOf(userDAO.getId(MainView.getLogin()));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         String query="update  users set users.password='"+newpassword+"' WHERE users.user_id="+userId+"; ";
         try {
             Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);

@@ -12,13 +12,19 @@ public class UserDAO implements Dao{
 
     public String getRoleByLogin(String login) throws SQLException {
         String query =
-                "SELECT role_name FROM role WHERE role_id = (SELECT role_id from users WHERE login = '" + login + "');";
+                "SELECT role_name FROM dziennik.role WHERE role_id = (SELECT role_id from dziennik.users WHERE login = '"+login+"');";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
+
+
         return resultSet.getString("role_name");
+
+
+
+
     }
 
     public int getId(String login) throws SQLException {

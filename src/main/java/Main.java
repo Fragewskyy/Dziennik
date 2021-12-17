@@ -24,9 +24,8 @@ public class Main {
     public static void main(String[] args) throws SQLException {
 
         MainView.sampletext();
-        login= MainView.readlogin();
-        password=MainView.readPassword();
-        Config config= Configchanger.inicializeConfig(login);
+
+        Config config= Configchanger.inicializeConfig(MainView.getLogin());
         List<Action> actions= config.inicializactions();
         while(true) {
             Menu menu = config.inicializemenu();

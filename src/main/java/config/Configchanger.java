@@ -2,22 +2,24 @@ package config;
 
 import repository.UserDAO;
 
+import java.sql.SQLException;
+
 public class Configchanger {
 
-    public static  Config inicializeConfig(String login){
+    public static  Config inicializeConfig(String login) throws SQLException {
         UserDAO userDAO=new UserDAO();
         switch(userDAO.getRoleByLogin(login)){
-            case "teacher":
+            case "Teacher":
                 return new TeacherConfig();
 
-            case "admin":
+            case "Admin":
                 return new AdminConfig();
 
-            case "dyrektor":
+            case "Principal":
                 return new PrincipalConfig();
-            case "guardian":
+            case "Guardian":
                 return new GuardianConfig();
-            case "student":
+            case "Student":
                 return new StudentConfig();
         }
         /**

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="jestem złodziejem ale z gracją więc no">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +43,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/menuupdate" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
@@ -137,12 +144,12 @@
       <option name="project" value="LOCAL" />
       <updated>1638030979928</updated>
     </task>
-    <task id="LOCAL-00007" summary="dao 2 podejscie jak sie usunie to magik">
-      <created>1639739742149</created>
+    <task id="LOCAL-00007" summary="jestem złodziejem ale z gracją więc no">
+      <created>1639506940848</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1639739742149</updated>
+      <updated>1639506940848</updated>
     </task>
     <option name="localTasksCounter" value="8" />
     <servers />
@@ -163,8 +170,8 @@
     <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
-    <MESSAGE value="dao 2 podejscie jak sie usunie to magik" />
-    <option name="LAST_COMMIT_MESSAGE" value="dao 2 podejscie jak sie usunie to magik" />
+    <MESSAGE value="jestem złodziejem ale z gracją więc no" />
+    <option name="LAST_COMMIT_MESSAGE" value="jestem złodziejem ale z gracją więc no" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
