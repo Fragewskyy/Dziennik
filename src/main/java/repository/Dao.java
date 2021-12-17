@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public interface Dao<T> {
 
-    String get(int id) throws SQLException;
+    T get(int id) throws SQLException;
 
     ArrayList<T> getAll() throws SQLException;
 

@@ -6,7 +6,7 @@ public class Configchanger {
 
     public static  Config inicializeConfig(String login){
         UserDAO userDAO=new UserDAO();
-        switch(userDAO.getrolebyLogin(login)){
+        switch(userDAO.getRoleByLogin(login)){
             case "teacher":
                 return new TeacherConfig();
 

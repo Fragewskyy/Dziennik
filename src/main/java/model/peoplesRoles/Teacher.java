@@ -1,6 +1,11 @@
 package model.peoplesRoles;
 
 public class Teacher {
-    int teacherId;
-    int userId;
+    public int teacherId;
+    public int userId;
+
+    public Teacher(int teacherId, int userId) {
+        this.teacherId = teacherId;
+        this.userId = userId;
+    }
 }
