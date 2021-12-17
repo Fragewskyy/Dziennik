@@ -21,9 +21,16 @@ public class UserDAO implements Dao{
         return resultSet.getString("role_name");
     }
 
-    public User getId(){return null;
-        //nie wiem ocb w tej metodzie toz to juz masz metode get
+    public int getId(String login) throws SQLException {
+        String query = "SELECT user_id FROM users WHERE login = '" + login + "';";
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
+                SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
+        statement.executeQuery(query);
+        ResultSet resultSet = statement.getResultSet();
+        return resultSet.getInt("user_id");
     }
+
 
     @Override
     public User get(int id) throws SQLException {
