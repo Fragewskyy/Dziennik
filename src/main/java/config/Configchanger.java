@@ -11,10 +11,8 @@ public class Configchanger {
         switch(userDAO.getRoleByLogin(login)){
             case "Teacher":
                 return new TeacherConfig();
-
             case "Admin":
                 return new AdminConfig();
-
             case "Principal":
                 return new PrincipalConfig();
             case "Guardian":
