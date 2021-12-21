@@ -9,15 +9,12 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TurnOffOnpasswordAction implements Action {
-    public static boolean passChecking = true;
+    public static boolean passChecking;
+
     @Override
     public void executeQuery() throws SQLException {
-        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
-        Statement statement = connection.createStatement();
-        String query = "SELECT password_check FROM admin where admin_id=1;";
-        ResultSet resultSet = statement.executeQuery(query);
-        if(resultSet.getInt("password_check") == 1) {
+        getPasswordCheckingValue();
+        if(passChecking) {
             System.out.println("Password checking is now enabled.");
         } else {
             System.out.println("Password checking is now disabled.");
@@ -38,7 +35,7 @@ public class TurnOffOnpasswordAction implements Action {
         }
     }
 
-    public boolean isValidPassword(String password) {
+    public static boolean isValidPassword(String password) {
         String regex = "^(?=.*[a-z])(?=."
                 + "*[A-Z])(?=.*\\d)"
                 + "(?=.*[-+_!@#$%^&*., ?]).+$";
@@ -52,8 +49,25 @@ public class TurnOffOnpasswordAction implements Action {
 
     }
 
+    public static void getPasswordCheckingValue() throws SQLException {
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
+                SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
+        String query = "SELECT password_check FROM admin where admin_id=1;";
+        ResultSet resultSet = statement.executeQuery(query);
+        if(resultSet.getInt("password_check") == 1) {
+            passChecking = true;
+        } else {
+            passChecking = false;
+        }
+    }
+
     @Override
     public String getlabel() {
         return "Turn Off or On password";
     }
 }
+//Login:
+//        cverden13@nbcnews.com
+//Password:
+//        9mA2g7N

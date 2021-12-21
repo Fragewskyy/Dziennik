@@ -1,5 +1,6 @@
 package repository;
 
+import controller.AdminActions.TurnOffOnpasswordAction;
 import controller.SQLController;
 import model.User;
 import model.peoplesRoles.Admin;
@@ -76,10 +77,18 @@ public class UserDAO implements Dao{
     @Override
     public void update(int id) throws SQLException {
         Scanner scanner = new Scanner(System.in);
+        String p = "";
         System.out.print("Type new login: ");
         String l = scanner.next();
-        System.out.print("Type new password: ");
-        String p = scanner.next();
+        if(TurnOffOnpasswordAction.passChecking){
+            do {
+                System.out.print("Type new password: ");
+                p = scanner.next();
+            } while (!TurnOffOnpasswordAction.isValidPassword(p));
+        } else {
+            System.out.print("Type new password: ");
+            p = scanner.next();
+        }
         System.out.print("Type new name: ");
         String n = scanner.next();
         System.out.print("Type new surname: ");
