@@ -34,7 +34,7 @@ public class SendTextMessegeAction implements Action {
         String messege=scanner.next();
         String userId=null;
 
-        String date= userDAO.getcurrentdate();
+        String date= userDAO.getcurrenttime();
         String query="Insert Into dziennik.messages(message_subject,message_text,date,user_id) values('"+subject+"','"+messege+"','"+date+"','"+reciverid+"');";
         try {
             userId = String.valueOf(userDAO.getId(MainView.getLogin()));
