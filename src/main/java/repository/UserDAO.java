@@ -5,20 +5,27 @@ import model.User;
 import model.peoplesRoles.Admin;
 
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserDAO implements Dao{
+    public String getcurrentdate(){
+        SimpleDateFormat formatter= new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date(System.currentTimeMillis());
+        return formatter.format(date).toString();
+    }
 
     public String getRoleByLogin(String login) throws SQLException {
+
         String query =
-                "SELECT role_name FROM dziennik.role WHERE role_id = (SELECT role_id from dziennik.users WHERE login = '"+login+"');";
+                "SELECT role_name FROM dziennik.role WHERE role_id=(SELECT role_id from dziennik.users WHERE login='"+login+"');";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
-        ResultSet resultSet = statement.getResultSet();
-
+        ResultSet resultSet = statement.executeQuery(query);
+        resultSet.next();
 
         return resultSet.getString("role_name");
 
@@ -32,8 +39,10 @@ public class UserDAO implements Dao{
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
-        statement.executeQuery(query);
-        ResultSet resultSet = statement.getResultSet();
+
+        ResultSet resultSet = statement.executeQuery(query);
+        resultSet.next();
+
         return resultSet.getInt("user_id");
     }
 

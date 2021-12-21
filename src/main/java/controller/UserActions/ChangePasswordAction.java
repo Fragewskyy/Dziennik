@@ -24,7 +24,7 @@ public class ChangePasswordAction implements Action {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        String query="update  users set users.password='"+newpassword+"' WHERE users.user_id="+userId+"; ";
+        String query="update  dziennik.users set users.password='"+newpassword+"' WHERE users.user_id="+userId+"; ";
         try {
             Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
             Statement statement = connection.createStatement();

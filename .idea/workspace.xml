@@ -7,7 +7,6 @@
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="jestem złodziejem ale z gracją więc no">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Configchanger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SQLController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
@@ -43,7 +42,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/menuupdate" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,6 +70,9 @@
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="Repository" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="repository" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639506940848</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jestem złodziejem ale z gracją więc no">
+      <created>1639768601887</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1639768601887</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
