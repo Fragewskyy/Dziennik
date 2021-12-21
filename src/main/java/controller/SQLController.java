@@ -9,7 +9,7 @@ public class SQLController {
     public static final String USERNAME = "root";
     public static final String URL = "jdbc:mysql://localhost:3306/dziennik";
 
-    public static void Connect() throws SQLException {
-        Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+    public static Connection Connect() throws SQLException {
+        return DriverManager.getConnection(URL, USERNAME, PASSWORD);
     }
 }

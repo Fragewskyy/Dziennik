@@ -10,7 +10,7 @@ public class MainView {
         System.out.println("Please write your login and password");
         MainView.readlogin();
         MainView.readPassword();
-
+        System.out.println(MainView.getLogin());
     }
     public static void readlogin(){
         System.out.println("Login:");
@@ -29,15 +29,15 @@ public class MainView {
         return login;
     }
 
-    public static  void setLogin(String login) {
-        login = login;
+    public static  void setLogin(String logi) {
+        login = logi;
     }
 
     public static String getPasswrod() {
         return passwrod;
     }
 
-    public static  void setPasswrod(String passwrod) {
-        passwrod = passwrod;
+    public static  void setPasswrod(String passwro) {
+        passwrod = passwro;
     }
 }

@@ -25,6 +25,7 @@ public class Main {
 
         MainView.sampletext();
 
+
         Config config= Configchanger.inicializeConfig(MainView.getLogin());
         List<Action> actions= config.inicializactions();
         while(true) {
