@@ -9,7 +9,23 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TeacherDAO implements Dao{
+    public int getteacheridbyname(String login ){
+        String query = "SELECT teacher_id from dziennik.teacher ,dziennik.users where login='"+login+"' and dziennik.users.user_id=dziennik.teacher.user_id ;";
 
+        Statement statement = null;
+        try {
+            Connection connection = SQLController.Connect();
+            statement = connection.createStatement();
+
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            return resultSet.getInt("teacher_id");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return 0;
+
+    }
     @Override
     public Teacher get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.teacher WHERE admin_id = " + id + ";";
