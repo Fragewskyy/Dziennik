@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentDAO implements Dao{
-
     @Override
     public Student get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.student WHERE student_id = " + id + ";";
@@ -18,8 +17,10 @@ public class StudentDAO implements Dao{
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
-        return new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
+        resultSet.next();
+        return new Student(resultSet.getInt("student_id"), resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                 resultSet.getInt("guardian_id"), resultSet.getString("phone_number"));
+    }
     }
 
     @Override

@@ -41,6 +41,7 @@ public class UserDAO implements Dao{
         statement.executeQuery(query);
         ResultSet resultSet = statement.executeQuery(query);
         resultSet.next();
+
         return resultSet.getInt("user_id");
     }
 
@@ -53,6 +54,7 @@ public class UserDAO implements Dao{
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
+        resultSet.next();
         return new User(resultSet.getString("login"), resultSet.getString("password"), resultSet.getString("name"),
                 resultSet.getString("surname"), resultSet.getInt("role_id"));
     }

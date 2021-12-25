@@ -8,15 +8,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GuardianDAO implements Dao{
+
+
+
     @Override
     public Guardian get(int id) throws SQLException {
-        String query = "SELECT * FROM dziennik.guardian WHERE guardian_id = " + id + ";";
+        String query = "SELECT * FROM dziennik.guardian WHERE user_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
-        return new Guardian(resultSet.getInt("guardian_id"), resultSet.getString("phone_number"), resultSet.getInt(
+        resultSet.next();
+        return new Guardian(resultSet.getInt("guardian_id"), resultSet.getString("phonenumber"), resultSet.getInt(
                 "user_id"));
     }
 
