@@ -21,7 +21,7 @@ public class StudentDAO implements Dao{
         return new Student(resultSet.getInt("student_id"), resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                 resultSet.getInt("guardian_id"), resultSet.getString("phone_number"));
     }
-    }
+
 
     @Override
     public ArrayList<Student> getAll() throws SQLException {
@@ -33,7 +33,7 @@ public class StudentDAO implements Dao{
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
         while(resultSet.next()) {
-            result.add(new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
+            result.add(new Student(1, resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                     resultSet.getInt("guardian_id"), resultSet.getString("phone_number")));
         }
 

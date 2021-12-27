@@ -39,7 +39,7 @@ public class MakeNewStudentAction implements Action {
         String phonenumber=scanner.next();
         Student student=null;
         try {
-            student=new Student(userDAO.getId(login),null,null,phonenumber);
+            student=new Student(1, userDAO.getId(login),null,null,phonenumber);
             studentDAO.save(student);
             System.out.println("you added student nice bro");
         } catch (SQLException throwables) {
