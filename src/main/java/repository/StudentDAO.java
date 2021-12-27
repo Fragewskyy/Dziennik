@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StudentDAO implements Dao{
-
     @Override
     public Student get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.student WHERE student_id = " + id + ";";
@@ -22,6 +21,7 @@ public class StudentDAO implements Dao{
         return new Student(resultSet.getInt("student_id"), resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                 resultSet.getInt("guardian_id"), resultSet.getString("phone_number"));
     }
+    }
 
     @Override
     public ArrayList<Student> getAll() throws SQLException {
@@ -33,7 +33,7 @@ public class StudentDAO implements Dao{
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
         while(resultSet.next()) {
-            result.add(new Student(resultSet.getInt("student_id"), resultSet.getInt("user_id"), resultSet.getInt("class_id"),
+            result.add(new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                     resultSet.getInt("guardian_id"), resultSet.getString("phone_number")));
         }
 
@@ -73,11 +73,11 @@ public class StudentDAO implements Dao{
 
     public void save(Student student) throws SQLException {
         String query =
-                "INSERT INTO dziennik.student (user_id, class_id, guardian_id, phone_number) VALUES (" + student.userId + ", " + student.classId + ", " + student.guardianId + ", '" + student.phoneNumber + "');";
+                "INSERT INTO dziennik.students (user_id, class_id, teacher_id, phone_number) VALUES (" + student.userId + ", " + student.classId + ", " + student.guardianId + ", '" + student.phoneNumber + "');";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
-        statement.executeQuery(query);
+        statement.executeUpdate(query);
     }
 
 }
