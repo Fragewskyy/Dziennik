@@ -4,18 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="DisplayAllAbsenceOfMyStudentsAction.java done.">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_12_2021_19_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_12_2021_19_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_12_2021_19_04_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_12_2021_19_04__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2021_17_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2021_17_02__Changes_.xml" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DisplayAllAbsenceOfMyStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/ShowAllAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/studentActions/ShowAllAbsenceAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TeacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TeacherDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -170,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640603033426</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)">
+      <created>1640629303844</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640629303844</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,7 +199,8 @@
     <MESSAGE value="Wyświetla od teraz oceny" />
     <MESSAGE value="jestem złodziejem ale z gracją więc no" />
     <MESSAGE value="DisplayAllAbsenceOfMyStudentsAction.java done." />
-    <option name="LAST_COMMIT_MESSAGE" value="DisplayAllAbsenceOfMyStudentsAction.java done." />
+    <MESSAGE value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
