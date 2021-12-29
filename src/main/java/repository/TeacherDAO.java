@@ -28,12 +28,13 @@ public class TeacherDAO implements Dao{
     }
     @Override
     public Teacher get(int id) throws SQLException {
-        String query = "SELECT * FROM dziennik.teacher WHERE admin_id = " + id + ";";
+        String query = "SELECT * FROM dziennik.teacher WHERE teacher_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
+        resultSet.next();
         return new Teacher(resultSet.getInt("teacher_id"), resultSet.getInt("user_id"));
     }
 
