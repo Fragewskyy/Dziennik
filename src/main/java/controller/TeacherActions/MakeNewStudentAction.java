@@ -26,7 +26,7 @@ public class MakeNewStudentAction implements Action {
         String login=scanner.next();
         System.out.println("student password");
         String password=scanner.next();
-        User user=new User(login,password,name,surname,1);
+        User user=new User(1,login,password,name,surname,1);
         try {
             userDAO.save(user);
         } catch (SQLException throwables) {
