@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2021_17_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_12_2021_17_02__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/SendExcuseToTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/SendExcuseToTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/TeacherDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/TeacherDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640701650166</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej">
+      <created>1640812708940</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640812708940</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,7 +208,8 @@
     <MESSAGE value="DisplayAllAbsenceOfMyStudentsAction.java done." />
     <MESSAGE value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
     <MESSAGE value="SendExcuseToTeacherAction.java done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="SendExcuseToTeacherAction.java done :)" />
+    <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
+    <option name="LAST_COMMIT_MESSAGE" value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
