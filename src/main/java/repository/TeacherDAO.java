@@ -3,12 +3,34 @@ package repository;
 import controller.SQLController;
 import model.peoplesRoles.Admin;
 import model.peoplesRoles.Teacher;
+import view.MainView;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TeacherDAO implements Dao{
+    public String  getsubject(){
+        UserDAO userdao=new UserDAO();
+        String userid=null;
+        try {
+             userid=String.valueOf(userdao.getId(MainView.getLogin()));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        String query="SELECT (SELECT subject_name FROM dziennik.subjects where dziennik.subjects.subject_id=dziennik.teacher.subject_id) AS sb FROM dziennik.teacher where user_id="+userid+"; ";
+        try {
+            Connection connection=SQLController.Connect();
+            Statement statement = connection.createStatement();
+            ResultSet resultSet=statement.executeQuery(query);
+            resultSet.next();
+            return resultSet.getString("sb");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return null;
+    }
+
     public int getteacheridbyname(String login ){
         String query = "SELECT teacher_id from dziennik.teacher ,dziennik.users where login='"+login+"' and dziennik.users.user_id=dziennik.teacher.user_id ;";
 

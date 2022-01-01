@@ -28,14 +28,22 @@ public class SendTextMessegeAction implements Action {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        Scanner scc=new Scanner(System.in);
         System.out.println("Your messege subject:");
-        String subject=scanner.next();
+        String subject=scc.nextLine();
         System.out.println("your text mesege:");
-        String messege=scanner.next();
+
+        Scanner sc=new Scanner(System.in);
+        String messeges=sc.nextLine();
+
+
+
+
+
         String userId=null;
 
         String date= userDAO.getcurrenttime();
-        String query="Insert Into dziennik.messages(message_subject,message_text,date,user_id) values('"+subject+"','"+messege+"','"+date+"','"+reciverid+"');";
+        String query="Insert Into dziennik.messages(message_subject,message_text,date,user_id) values('"+subject+"','"+messeges+"','"+date+"','"+reciverid+"');";
         try {
             userId = String.valueOf(userDAO.getId(MainView.getLogin()));
         } catch (SQLException throwables) {
