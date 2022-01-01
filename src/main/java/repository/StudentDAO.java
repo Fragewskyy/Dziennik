@@ -8,32 +8,49 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import static controller.SQLController.PASSWORD;
+
 public class StudentDAO implements Dao{
+    public String getstudentid( String login ){
+        String query="SELECT student_id  FROM dziennik.students where user_id=(SELECT user_id FROM dziennik.users where login='"+login+");";
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            return String.valueOf(resultSet.getInt("student_id"));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        ///tu będzie error spokojnie
+        return "error";
+    }
+
+
     @Override
     public Student get(int id) throws SQLException {
         String query = "SELECT * FROM dziennik.student WHERE student_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
+                PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
-        resultSet.next();
-        return new Student(resultSet.getInt("student_id"), resultSet.getInt("user_id"), resultSet.getInt("class_id"),
+        return new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                 resultSet.getInt("guardian_id"), resultSet.getString("phone_number"));
     }
-
 
     @Override
     public ArrayList<Student> getAll() throws SQLException {
         ArrayList<Student> result = new ArrayList<>();
         String query = "SELECT * FROM dziennik.student;";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
+                PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
         while(resultSet.next()) {
-            result.add(new Student(1, resultSet.getInt("user_id"), resultSet.getInt("class_id"),
+            result.add(new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                     resultSet.getInt("guardian_id"), resultSet.getString("phone_number")));
         }
 
@@ -55,7 +72,7 @@ public class StudentDAO implements Dao{
                 "UPDATE dziennik.student SET user_id = " + u + ", class_id = " + c + ", guardian_id = " + g + ", " +
                         "phone_number = '" + p + "' WHERE student_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
+                PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
 
@@ -66,7 +83,7 @@ public class StudentDAO implements Dao{
     public void delete(int id) throws SQLException {
         String query = "DELETE FROM dziennik.student WHERE student_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
+                PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
     }
@@ -75,7 +92,7 @@ public class StudentDAO implements Dao{
         String query =
                 "INSERT INTO dziennik.students (user_id, class_id, teacher_id, phone_number) VALUES (" + student.userId + ", " + student.classId + ", " + student.guardianId + ", '" + student.phoneNumber + "');";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
+                PASSWORD);
         Statement statement = connection.createStatement();
         statement.executeUpdate(query);
     }
