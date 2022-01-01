@@ -6,23 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="modify grade action in progres">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/ModifyGradeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/ModifyGradeAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserActions/SendTextMessegeAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/ShowAllAbsenceAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/StudentDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/TeacherDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +37,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature/jazda" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640603033426</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="modify grade action in progres">
+      <created>1641060155558</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1641060155558</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +189,8 @@
     <MESSAGE value="Wyświetla od teraz oceny" />
     <MESSAGE value="jestem złodziejem ale z gracją więc no" />
     <MESSAGE value="DisplayAllAbsenceOfMyStudentsAction.java done." />
-    <option name="LAST_COMMIT_MESSAGE" value="DisplayAllAbsenceOfMyStudentsAction.java done." />
+    <MESSAGE value="modify grade action in progres" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify grade action in progres" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
