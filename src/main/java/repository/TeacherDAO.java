@@ -28,7 +28,7 @@ public class TeacherDAO implements Dao{
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return null;
+        return "error";
     }
 
     public int getteacheridbyname(String login ){
