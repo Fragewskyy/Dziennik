@@ -38,7 +38,7 @@ public class ClassDAO implements Dao{
 
     @Override
     public void delete(int id) throws SQLException {
-        String query = "DELETE FROM dziennik.classes WHERE admin_id = " + id + ";";
+        String query = "DELETE FROM dziennik.classes WHERE class_id = " + id + ";";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();

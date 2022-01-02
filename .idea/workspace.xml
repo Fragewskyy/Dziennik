@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640901585344</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="ExecuteAllmarksAction.java - done :)">
+      <created>1641053373735</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641053373735</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +230,8 @@
     <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
     <MESSAGE value="DisplayyAllPersonsAction.java - done :)" />
     <MESSAGE value="ExecuteClassesAndStudentsAction.java - done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ExecuteClassesAndStudentsAction.java - done :)" />
+    <MESSAGE value="ExecuteAllmarksAction.java - done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExecuteAllmarksAction.java - done :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
