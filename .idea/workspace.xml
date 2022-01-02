@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="modify grade action in progres">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +39,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/jazda" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +56,6 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -161,14 +162,49 @@
       <option name="project" value="LOCAL" />
       <updated>1640603033426</updated>
     </task>
-    <task id="LOCAL-00010" summary="modify grade action in progres">
-      <created>1641060155558</created>
+    <task id="LOCAL-00010" summary="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)">
+      <created>1640629303844</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1641060155558</updated>
+      <updated>1640629303844</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="SendExcuseToTeacherAction.java done :)">
+      <created>1640701650166</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640701650166</updated>
+    </task>
+    <task id="LOCAL-00012" summary="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej">
+      <created>1640812708940</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640812708940</updated>
+    </task>
+    <task id="LOCAL-00013" summary="DisplayyAllPersonsAction.java - done :)">
+      <created>1640852970027</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640852970027</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ExecuteClassesAndStudentsAction.java - done :)">
+      <created>1640901585344</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640901585344</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ExecuteAllmarksAction.java - done :)">
+      <created>1641053373735</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1641053373735</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,8 +225,13 @@
     <MESSAGE value="Wyświetla od teraz oceny" />
     <MESSAGE value="jestem złodziejem ale z gracją więc no" />
     <MESSAGE value="DisplayAllAbsenceOfMyStudentsAction.java done." />
-    <MESSAGE value="modify grade action in progres" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify grade action in progres" />
+    <MESSAGE value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
+    <MESSAGE value="SendExcuseToTeacherAction.java done :)" />
+    <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
+    <MESSAGE value="DisplayyAllPersonsAction.java - done :)" />
+    <MESSAGE value="ExecuteClassesAndStudentsAction.java - done :)" />
+    <MESSAGE value="ExecuteAllmarksAction.java - done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExecuteAllmarksAction.java - done :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
