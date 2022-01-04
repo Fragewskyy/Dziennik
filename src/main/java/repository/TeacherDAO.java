@@ -10,6 +10,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TeacherDAO implements Dao{
+    public String getteacherid( String login ){
+        String query="SELECT teacher_id  FROM dziennik.teacher where user_id=(SELECT user_id FROM dziennik.users where login='"+login+");";
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            return String.valueOf(resultSet.getInt("teacher_id"));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        ///tu będzie error spokojnie
+        return "error";
+    }
     public String  getsubject(){
         UserDAO userdao=new UserDAO();
         String userid=null;
