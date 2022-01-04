@@ -36,6 +36,7 @@ public class StudentDAO implements Dao{
         Statement statement = connection.createStatement();
         statement.executeQuery(query);
         ResultSet resultSet = statement.getResultSet();
+        resultSet.next();
         return new Student( resultSet.getInt("user_id"), resultSet.getInt("class_id"),
                 resultSet.getInt("guardian_id"), resultSet.getString("phone_number"));
     }
