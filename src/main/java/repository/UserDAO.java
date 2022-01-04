@@ -52,9 +52,11 @@ public class UserDAO implements Dao{
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
-        statement.executeQuery(query);
-        ResultSet resultSet = statement.getResultSet();
-        resultSet.next();
+        PreparedStatement preparedStatement = connection.prepareStatement(query,
+                ResultSet.TYPE_SCROLL_SENSITIVE,
+                ResultSet.CONCUR_UPDATABLE);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        resultSet.first();
         return new User(resultSet.getInt("user_id"), resultSet.getString("login"), resultSet.getString("password"),
                 resultSet.getString("name"),
                 resultSet.getString("surname"), resultSet.getInt("role_id"));

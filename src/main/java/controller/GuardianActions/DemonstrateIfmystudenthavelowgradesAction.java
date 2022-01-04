@@ -20,11 +20,10 @@ public class DemonstrateIfmystudenthavelowgradesAction implements Action {
         StudentDAO studentDAO = new StudentDAO();
         Guardian guardian = guardianDAO.get(userDAO.getId(MainView.getLogin()));
         String query = "select avg(grade) as avgGrades, student_id,  (select subject_name from subjects where " +
-                "subjects.subject_id = grades.subject_id) as subjectname from grades WHERE student_id in (select " +
-                "student_id from " +
-                "student where guardian_Id = " + guardian.guardianId +") GROUP BY student_id, subject_id ORDER BY " +
-                "student_id" +
-                " DESC;";
+                "subjects.subject_id = (select subject_id from lessons where lesson_id = grades.lesson_id)) as " +
+                "subjectname from grades WHERE student_id in (select student_id from student where guardian_Id = " + guardian.guardianId +
+                " " +
+                ") GROUP BY student_id, lesson_id ORDER BY student_id DESC;";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
