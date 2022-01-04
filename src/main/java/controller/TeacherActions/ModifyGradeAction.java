@@ -49,13 +49,13 @@ public class ModifyGradeAction implements Action {
         System.out.println("select your grade");
 
         for(int listindex=1; listindex<finalgradesMapList.size(); listindex++) {
-            System.out.println(listindex+"="+finalgradesMapList.get(listindex).get(0)+":"+finalgradesMapList.get(listindex).get(1));
+            System.out.println(listindex+"="+finalgradesMapList.get(listindex).get(0)+":"+finalgradesMapList.get(listindex).get(1)+finalgradesMapList.get(listindex).get(2));
         }
         int inputnumber=scanner.nextInt();
         System.out.println("what new grade");
         String newgrade=scanner.next();
 
-        List<String> finalgrade=Arrays.asList(new String[]{finalgradesMapList.get(inputnumber).get(0), newgrade});
+        List<String> finalgrade=Arrays.asList(new String[]{finalgradesMapList.get(inputnumber).get(0), newgrade,finalgradesMapList.get(inputnumber).get(2)});
         finalgradesMapList.replace(inputnumber,finalgrade);
         String query="update dziennik.grades set grade=3 where grade_id="+finalgradesMapList.get(inputnumber).get(2)+";";
         Connection connection = null;
