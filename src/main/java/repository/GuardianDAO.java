@@ -8,7 +8,21 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GuardianDAO implements Dao{
-
+    public String getguardianid(String login){
+        String query="SELECT guardian_id  FROM dziennik.guardian where user_id=(SELECT user_id FROM dziennik.users where login='"+login+");";
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            return String.valueOf(resultSet.getInt("student_id"));
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        ///tu będzie error spokojnie
+        return "error";
+    }
 
 
     @Override
