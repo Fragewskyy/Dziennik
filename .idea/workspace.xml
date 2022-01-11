@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ShowAllgradesOfMyStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ShowAllgradesOfMyStudentAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641110049239</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ShowAllgradesOfMyStudentAction.java - done :)">
+      <created>1641913653874</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1641913653874</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +256,8 @@
     <MESSAGE value="ExecuteClassesAndStudentsAction.java - done :)" />
     <MESSAGE value="ExecuteAllmarksAction.java - done :)" />
     <MESSAGE value="AddStudentToClassAction.java - done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddStudentToClassAction.java - done :)" />
+    <MESSAGE value="ShowAllgradesOfMyStudentAction.java - done :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShowAllgradesOfMyStudentAction.java - done :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

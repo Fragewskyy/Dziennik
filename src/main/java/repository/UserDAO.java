@@ -124,7 +124,7 @@ public class UserDAO implements Dao{
 
     public void save(User user) throws SQLException {
         String query =
-                "INSERT INTO dziennik.users (login, password, name, surname,role_id) VALUES ('" + user.login + "', '" + user.password + "', '" + user.name + "', '" + user.surname + "',1);";
+                "INSERT INTO dziennik.users (login, password, name, surname,role_id) VALUES ('" + user.login + "', '" + user.password + "', '" + user.name + "', '" + user.surname + "', " + user.roleId + ");";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();

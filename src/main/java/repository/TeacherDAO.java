@@ -117,6 +117,6 @@ public class TeacherDAO implements Dao{
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 SQLController.PASSWORD);
         Statement statement = connection.createStatement();
-        statement.executeQuery(query);
+        statement.executeUpdate(query);
     }
 }
