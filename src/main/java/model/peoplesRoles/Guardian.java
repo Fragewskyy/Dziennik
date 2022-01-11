@@ -10,4 +10,9 @@ public class Guardian {
         this.phoneNumber = phoneNumber;
         this.userId = userId;
     }
+
+    public Guardian(String phoneNumber, int userId) {
+        this.phoneNumber = phoneNumber;
+        this.userId = userId;
+    }
 }
