@@ -14,7 +14,8 @@ public class ClassDAO implements Dao{
             Statement statement=connection.createStatement();
             resultSet = statement.executeQuery(query);
             resultSet.next();
-            resultSet.getInt("class_id");
+            return String.valueOf( resultSet.getInt("class_id"));
+
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }

@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="InsertStudentToGuardian done :0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
