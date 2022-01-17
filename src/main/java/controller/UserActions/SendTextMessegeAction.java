@@ -5,56 +5,68 @@ import controller.SQLController;
 import repository.UserDAO;
 import view.MainView;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 public class SendTextMessegeAction implements Action {
 
     @Override
-    public void executeQuery() {
+    public void executeQuery() throws SQLException {
         UserDAO userDAO=new UserDAO();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("text for who(login");
-        int reciverid = 0;
+
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
 
 
 
-        try {
-            reciverid=userDAO.getId(scanner.next());
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-        Scanner scc=new Scanner(System.in);
-        System.out.println("Your messege subject:");
-        String subject=scc.nextLine();
-        System.out.println("your text mesege:");
+        int recipientId = 0;
+        String nameAndSurname = "";
 
-        Scanner sc=new Scanner(System.in);
-        String messeges=sc.nextLine();
+        while(true){
+            System.out.print("Type name and surname of recipient: ");
+            nameAndSurname = scanner.nextLine();
 
+            String queryOfGettingIdByName = "Select user_id, name, surname from users;";
+            ResultSet resultSet = statement.executeQuery(queryOfGettingIdByName);
 
-
-
-
-        String userId=null;
-
-        String date= userDAO.getcurrenttime();
-        String query="Insert Into dziennik.messages(message_subject,message_text,date,user_id) values('"+subject+"','"+messeges+"','"+date+"','"+reciverid+"');";
-        try {
-            userId = String.valueOf(userDAO.getId(MainView.getLogin()));
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+            while (resultSet.next()){
+                if((resultSet.getString("name") + " " + resultSet.getString("surname")).equals(nameAndSurname)) {
+                    recipientId = resultSet.getInt("user_id");
+                    break;
+                }
+            }
+            if (recipientId == 0) {
+                System.out.println("There is no user in database with this name or surname. Try again.");
+            } else {
+                break;
+            }
         }
 
+
+
+
+        System.out.print("Type subject of your message: ");
+        String subject = scanner.nextLine();
+
+        System.out.print("Type content of your message:");
+        String message = scanner.nextLine();
+
+
+
+
+
+        int userId = userDAO.getId(MainView.getLogin());
+
+        String date = userDAO.getcurrenttime();
+        String query=
+                "Insert Into dziennik.messages(message_subject,message_text,date,user_id,recipient_id) values('" + subject +
+                        "','" + message + "','" + date + "'," + userId + "," + recipientId + ");";
+
         try {
-            Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
-            Statement statement = connection.createStatement();
             statement.executeUpdate(query);
-            System.out.println("you sendet a messege , nice bro");
+            System.out.println("Message successfully sent.");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -63,6 +75,6 @@ public class SendTextMessegeAction implements Action {
     @Override
     public String getlabel() {
 
-        return "Send text messege";
+        return "Send text message.";
     }
 }

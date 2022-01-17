@@ -3,7 +3,7 @@ package view;
 import java.util.Scanner;
 
 public class MainView {
-    static String  login;
+    static String login;
     static String passwrod;
     public static void sampletext(){
         System.out.println("welcome to my School Diary");

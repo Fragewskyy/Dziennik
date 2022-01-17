@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ShowAllgradesOfMyStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/SendTextMessegeAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/MainView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ShowAllgradesOfMyStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ShowAllgradesOfMyStudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/VerifyStudentsAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/VerifyStudentsAbsenceAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Guardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/peoplesRoles/Guardian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641914559666</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ShowAllgradesOfMyStudentAction.java - fixed :)">
+      <created>1642411546497</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1642411546497</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +274,8 @@
     <MESSAGE value="ExecuteClassesAndStudentsAction.java - done :)" />
     <MESSAGE value="ExecuteAllmarksAction.java - done :)" />
     <MESSAGE value="AddStudentToClassAction.java - done :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddStudentToClassAction.java - done :)" />
+    <MESSAGE value="ShowAllgradesOfMyStudentAction.java - fixed :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ShowAllgradesOfMyStudentAction.java - fixed :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
