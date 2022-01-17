@@ -2,6 +2,7 @@ package controller.GuardianActions;
 
 import controller.Action;
 import controller.SQLController;
+import controller.UserActions.SendTextMessegeAction;
 import model.User;
 import model.peoplesRoles.Guardian;
 import model.peoplesRoles.Student;
@@ -17,6 +18,7 @@ import java.util.Scanner;
 public class SendExcuseToTeacherAction implements Action {
     @Override
     public void executeQuery() throws SQLException {
+
         UserDAO userDAO = new UserDAO();
         GuardianDAO guardianDAO = new GuardianDAO();
         StudentDAO studentDAO = new StudentDAO();
@@ -51,6 +53,9 @@ public class SendExcuseToTeacherAction implements Action {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.next();
         String[] sModified = s.split(" ");
+
+        User user = userDAO.get(guardianDAO.get(guardian.guardianId).userId);
+
         for (String sM : sModified) {
             String query1 =
                     "UPDATE absences SET is_on_lesson = 1 WHERE absence_id = " + absenceIds.get(Integer.parseInt(sM)-1) +

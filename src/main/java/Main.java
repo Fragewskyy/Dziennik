@@ -14,10 +14,10 @@ public class Main {
     public static String login;
     public static String password;
 
-    public static String getlogin(){
+    public static String getLogin(){
         return login;
     }
-    public static String getpassword(){
+    public static String getPassword(){
         return password;
     }
 
