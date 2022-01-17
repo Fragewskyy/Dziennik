@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="InsertStudentToGuardian done :0">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="co za problem , połowa verifystudents">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/DemonstrateIfmystudenthavelowgradesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/GenerateReportsForStudentswhoFailAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641414658825</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="co za problem , połowa verifystudents">
+      <created>1642350196741</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1642350196741</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +275,8 @@
     <MESSAGE value="AddStudentToClassAction.java - done :)" />
     <MESSAGE value="Changes" />
     <MESSAGE value="InsertStudentToGuardian done :0" />
-    <option name="LAST_COMMIT_MESSAGE" value="InsertStudentToGuardian done :0" />
+    <MESSAGE value="co za problem , połowa verifystudents" />
+    <option name="LAST_COMMIT_MESSAGE" value="co za problem , połowa verifystudents" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -38,27 +38,35 @@ public class GenerateCertificateForAllStudentsAction implements Action {
         Scanner scanner = new Scanner(System.in);
         String classname=scanner.next();
         String classid=classDAO.getclassbyname(classname);
-        ArrayList<Integer> classusers=showstudentsfromclass(classid);
+        ArrayList<Integer> classStudents=showstudentsfromclass(classid);
         Document document = new Document();
+        for(int studentid:classStudents) {
 
-        try {
-            PdfWriter.getInstance(document, new FileOutputStream("iTextHelloWorld.pdf"));
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            String query="SELECT (SELECT name FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as name,(SELECT surname FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as surname from dziennik.students where student_id="+studentid+";";
+            try {
+                Connection connection=SQLController.Connect();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query);
+                PdfWriter.getInstance(document, new FileOutputStream("iTextHelloWorld.pdf"));
+            } catch (DocumentException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            document.open();
+            Font font = FontFactory.getFont(FontFactory.COURIER, 32, BaseColor.BLACK);
+            Chunk chunk = new Chunk("Hello World", font);
+
+            try {
+                document.add(chunk);
+            } catch (DocumentException e) {
+                e.printStackTrace();
+            }
+            document.close();
+
         }
 
-        document.open();
-        Font font = FontFactory.getFont(FontFactory.COURIER, 32, BaseColor.BLACK);
-        Chunk chunk = new Chunk("Hello World", font);
 
-        try {
-            document.add(chunk);
-        } catch (DocumentException e) {
-            e.printStackTrace();
-        }
-        document.close();
     }
 
     @Override
