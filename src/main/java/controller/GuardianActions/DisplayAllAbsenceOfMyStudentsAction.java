@@ -19,12 +19,10 @@ public class DisplayAllAbsenceOfMyStudentsAction implements Action {
         GuardianDAO guardianDAO = new GuardianDAO();
         StudentDAO studentDAO = new StudentDAO();
         Guardian guardian = guardianDAO.get(userDAO.getId(MainView.getLogin()));
-        String query = "select is_on_lesson, student_id, (select lesson_date from lessons where lessons.lesson_id = " +
-                "absences.lesson_id) as date,  (select subject_name from subjects where subjects.subject_id = (select" +
-                " subject_id from lessons where lessons.lesson_id = absences.lesson_id)) as subjectname from absences" +
-                " WHERE student_id in (select student_id from student where guardian_Id = " + guardian.guardianId + ") GROUP BY" +
-                " " +
-                "student_id ORDER BY student_id DESC; ";
+        String query = "select absence_id, is_on_lesson, student_id, (select lesson_date from lessons where lessons" +
+                ".lesson_id = absences.lesson_id) as date,  (select subject_name from subjects where subjects" +
+                ".subject_id = (select subject_id from lessons where lessons.lesson_id = absences.lesson_id)) as " +
+                "subjectname from absences WHERE student_id in (select student_id from student where guardian_Id = " + guardian.guardianId + ") ORDER BY student_id DESC;";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
