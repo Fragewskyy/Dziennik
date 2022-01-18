@@ -1,5 +1,7 @@
 package controller.GuardianActions;
 
+import com.itextpdf.text.*;
+import com.itextpdf.text.pdf.PdfWriter;
 import controller.Action;
 import controller.SQLController;
 import model.User;
@@ -10,6 +12,8 @@ import repository.StudentDAO;
 import repository.UserDAO;
 import view.MainView;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.sql.*;
 
 public class GenerateReportsForStudentswhoFailAction implements Action {
@@ -27,6 +31,7 @@ public class GenerateReportsForStudentswhoFailAction implements Action {
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
+        String content = "";
         while (resultSet.next()){
             if(resultSet.getDouble("avgGrades") < 1.6){
                 Student student = studentDAO.get(resultSet.getInt("student_id"));
@@ -34,7 +39,35 @@ public class GenerateReportsForStudentswhoFailAction implements Action {
                 System.out.println("!ATTENTION! Student " + user.name + " " + user.surname + " is going to fail " +
                         "promotion from " + resultSet.getString(
                         "subjectname") + ". Average equals " + resultSet.getDouble("avgGrades"));
+                content += "!ATTENTION! Student " + user.name + " " + user.surname + " is going to fail " +
+                        "promotion from " + resultSet.getString(
+                        "subjectname") + ". Average equals " + resultSet.getDouble("avgGrades") + "\n";
             }
+        }
+        generatePDF(content);
+
+    }
+
+    public void generatePDF(String content) {
+        String FILE = "C:/Users/Franek/Desktop/raport.pdf";
+        Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18, Font.BOLD);
+        Font redFont = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.NORMAL, BaseColor.RED);
+        Font subFont = new Font(Font.FontFamily.TIMES_ROMAN, 16, Font.BOLD);
+        Font smallFont = new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD);
+        try{
+            Document document = new Document();
+            PdfWriter.getInstance(document, new FileOutputStream(FILE));
+            document.open();
+            Paragraph preface = new Paragraph();
+            for (int i = 0; i < 1; i++) {
+                preface.add(new Paragraph(" "));
+            }
+            preface.add(new Paragraph("Your student have to low grades, list of them below", catFont));
+            preface.add(new Paragraph(content, smallFont));
+            document.add(preface);
+            document.close();
+        } catch (DocumentException | FileNotFoundException e) {
+            e.printStackTrace();
         }
 
     }
