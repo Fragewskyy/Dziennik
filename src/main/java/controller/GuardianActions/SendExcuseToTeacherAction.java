@@ -127,6 +127,6 @@ public class SendExcuseToTeacherAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Send Excuse To Teacher";
+        return "Send an excuse to teacher.";
     }
 }

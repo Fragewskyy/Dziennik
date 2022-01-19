@@ -44,6 +44,6 @@ public class DisplayAllAbsenceOfMyStudentsAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Display All Absence Of My Students";
+        return "Display absences of my students.";
     }
 }

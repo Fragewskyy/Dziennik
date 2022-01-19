@@ -40,6 +40,6 @@ public class ExecuteAllmarksAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Execute All marks";
+        return "Display all grades of selected student.";
     }
 }
