@@ -74,6 +74,6 @@ public class GenerateReportsForStudentswhoFailAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Generate reports for students who are going to fail promotion";
+        return "Generate reports for students who are going to fail promotion.";
     }
 }

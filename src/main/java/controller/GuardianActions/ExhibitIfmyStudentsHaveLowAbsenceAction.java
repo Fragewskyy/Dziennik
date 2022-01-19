@@ -61,6 +61,6 @@ public class ExhibitIfmyStudentsHaveLowAbsenceAction implements Action {
 
     @Override
     public String getlabel() {
-        return "ExhibitIfmyStudentsHaveLowAbsence";
+        return "Display if my students have too low frequency.";
     }
 }

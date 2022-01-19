@@ -41,6 +41,6 @@ public class ShowAllgradesOfMyStudentAction implements Action {
 
     @Override
     public String  getlabel() {
-        return "Show Allgrades Of my student ";
+        return "Show all grades of my students.";
     }
 }
