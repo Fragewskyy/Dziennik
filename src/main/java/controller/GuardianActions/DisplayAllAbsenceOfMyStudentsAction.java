@@ -11,6 +11,10 @@ import repository.UserDAO;
 import view.MainView;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 public class DisplayAllAbsenceOfMyStudentsAction implements Action {
     @Override
@@ -23,22 +27,38 @@ public class DisplayAllAbsenceOfMyStudentsAction implements Action {
                 ".lesson_id = absences.lesson_id) as date,  (select subject_name from subjects where subjects" +
                 ".subject_id = (select subject_id from lessons where lessons.lesson_id = absences.lesson_id)) as " +
                 "subjectname from absences WHERE student_id in (select student_id from student where guardian_Id = " + guardian.guardianId + ") ORDER BY student_id DESC;";
-        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME, SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
-        int iter = 0;
-        while (resultSet.next()){
-            if(resultSet.getInt("is_on_lesson") == 0){
-                iter += 1;
-                Student student = studentDAO.get(resultSet.getInt("student_id"));
-                User user = userDAO.get(student.userId);
-                System.out.println("Student: " + user.name + " " + user.surname + " | Subject: " + resultSet.getString(
-                        "subjectname") + " " +
-                        " | Date: " + resultSet.getDate("date"));
+        Set<Integer> studentIds = new HashSet<>();
+        while (resultSet.next()) {
+            if (resultSet.getInt("is_on_lesson") == 0) {
+                studentIds.add(resultSet.getInt("student_id"));
             }
         }
-        if(iter == 0) {
-            System.out.println("Your students are not absent.");
+        String[] absenceT = {"", ""};
+        resultSet.close();
+        ResultSet resultSet1 = statement.executeQuery(query);
+        List<Integer> studentIdsList = new ArrayList<>(studentIds);
+
+        while (resultSet1.next()) {
+            if (resultSet1.getInt("is_on_lesson") == 0) {
+                for (Integer studentId : studentIds) {
+                    if(resultSet1.getInt("student_id") == studentId) {
+                        absenceT[studentIdsList.indexOf(studentId)] += ("- Subject: " + resultSet1.getString(
+                                "subjectname") + " " + " | Date: " + resultSet1.getDate("date") + "\n");
+                    }
+                }
+            }
+        }
+//        System.out.println(studentIds);
+//        System.out.println(absences);
+        for (Integer studentId : studentIds) {
+            Student student = studentDAO.get(studentId);
+            User user = userDAO.get(student.userId);
+            System.out.println(user.name + " " + user.surname + "'s absences: ");
+            System.out.println(absenceT[studentIdsList.indexOf(studentId)]);
+
         }
     }
 
