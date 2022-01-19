@@ -20,12 +20,7 @@ public class ExhibitIfmyStudentsHaveLowAbsenceAction implements Action {
         GuardianDAO guardianDAO = new GuardianDAO();
         StudentDAO studentDAO = new StudentDAO();
         Guardian guardian = guardianDAO.get(userDAO.getId(MainView.getLogin()));
-        String query = "select is_on_lesson, student_id, (select lesson_date from lessons where lessons.lesson_id = " +
-                "absences.lesson_id) as date,  (select subject_name from subjects where subjects.subject_id = (select" +
-                " subject_id from lessons where lessons.lesson_id = absences.lesson_id)) as subjectname from absences" +
-                " WHERE student_id in (select student_id from student where guardian_Id = " + guardian.guardianId + ") GROUP BY" +
-                " " +
-                "student_id ORDER BY student_id DESC; ";
+        String query = "select student_id from student where guardian_id = " + guardian.guardianId;
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery(query);
@@ -39,7 +34,7 @@ public class ExhibitIfmyStudentsHaveLowAbsenceAction implements Action {
             double iter = 0;
             double isOnLessonTrue = 0;
             double isOnLessonFalse = 0;
-            ResultSet resultSet1 = statement.executeQuery(query);
+            ResultSet resultSet1 = statement.executeQuery(query1);
             Student student = studentDAO.get(studentId);
             User user = userDAO.get(student.userId);
             while (resultSet1.next()) {
@@ -51,10 +46,12 @@ public class ExhibitIfmyStudentsHaveLowAbsenceAction implements Action {
                     iter += 1;
                 }
             }
-            if((isOnLessonTrue/iter) < 0.8) {
-                System.out.println("Student " + user.name + " " + user.surname + " has too low frequency, excuse it! " + (isOnLessonTrue/iter * 100) + "%");
+            if(Math.round((isOnLessonTrue/iter)*100) < 80) {
+                System.out.println("Student " + user.name + " " + user.surname + " has too low frequency. Frequency: " + Math.round(isOnLessonTrue/iter * 100) + "%");
+
+
             } else {
-                System.out.println("Student " + user.name + " " + user.surname + " has correct frequency. Frequency " + (isOnLessonTrue/iter * 100) + "%");
+                System.out.println("Student " + user.name + " " + user.surname + " has correct frequency. Frequency: " + Math.round(isOnLessonTrue/iter * 100) + "%");
             }
         }
     }
