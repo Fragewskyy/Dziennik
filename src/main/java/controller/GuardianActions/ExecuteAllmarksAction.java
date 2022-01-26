@@ -42,7 +42,7 @@ public class ExecuteAllmarksAction implements Action {
         int choice;
         while (true) {
             System.out.print("Select the number of student whose grades you want to see(must be between 1 and " + iter +
-                    ": ");
+                    "): ");
             try {
                 choice = scanner.nextInt();
                 if (choice >= 1 && choice <= iter) {
