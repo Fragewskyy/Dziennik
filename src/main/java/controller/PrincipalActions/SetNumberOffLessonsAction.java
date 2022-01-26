@@ -6,6 +6,8 @@ public class SetNumberOffLessonsAction implements Action {
     @Override
     public void executeQuery() {
 
+        System.out.println("Coming Soon!");
+
     }
 
     @Override

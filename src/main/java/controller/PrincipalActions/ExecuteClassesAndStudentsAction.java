@@ -42,6 +42,6 @@ public class ExecuteClassesAndStudentsAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Execute Classe sAnd Student";
+        return "Display all classes + students.";
     }
 }

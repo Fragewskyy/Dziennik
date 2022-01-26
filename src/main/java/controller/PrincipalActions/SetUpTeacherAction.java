@@ -9,18 +9,46 @@ import repository.TeacherDAO;
 import repository.UserDAO;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SetUpTeacherAction implements Action {
     @Override
     public void executeQuery() throws SQLException {
+
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
+                SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
+
+        ArrayList<String> loginList = new ArrayList<>();
+
+        String queryLogins = "select login from users;";
+        ResultSet loginResultSet = statement.executeQuery(queryLogins);
+        while (loginResultSet.next()){
+            loginList.add(loginResultSet.getString("login"));
+        }
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Type name: ");
         String n = scanner.next();
         System.out.print("Type surname: ");
         String s = scanner.next();
-        System.out.print("Type login: ");
-        String l = scanner.next();
+
+        String l;
+
+        while(true){
+            System.out.print("Type login: ");
+            l = scanner.next();
+            if(!(loginList.contains(l))){
+                break;
+            }
+            else {
+                System.out.println("This login already existed! Type again.");
+            }
+        }
+
+
+
         String correctP;
         while (true) {
             System.out.print("Set password: ");
@@ -38,9 +66,7 @@ public class SetUpTeacherAction implements Action {
         UserDAO userDAO = new UserDAO();
         userDAO.save(user);
         String query = "select user_id from users where users.login = '" + l + "';";
-        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
-                SQLController.PASSWORD);
-        Statement statement = connection.createStatement();
+
         ResultSet resultSet = statement.executeQuery(query);
         resultSet.next();
         teacherDAO.save(new Teacher(1, resultSet.getInt("user_id")));
@@ -51,6 +77,6 @@ public class SetUpTeacherAction implements Action {
 
     @Override
     public String getlabel() {
-        return "create new Teacher";
+        return "Create new teacher.";
     }
 }
