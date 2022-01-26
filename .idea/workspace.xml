@@ -7,9 +7,7 @@
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExecuteAllmarksAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642594594711</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Fixed errors and exceptions catched">
+      <created>1642604579534</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642604579535</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,7 +313,8 @@
     <MESSAGE value="GenerateReportsForStudentswhoFailAction.java - done!!!!" />
     <MESSAGE value="Fixed labels of guardian actions, and tested DemonstrateIfmystudenthavelowgradesAction.java" />
     <MESSAGE value="little fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="little fixes" />
+    <MESSAGE value="Fixed errors and exceptions catched" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors and exceptions catched" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

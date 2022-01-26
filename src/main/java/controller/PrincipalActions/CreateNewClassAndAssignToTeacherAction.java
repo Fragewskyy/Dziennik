@@ -6,17 +6,33 @@ import model.peoplesRoles.Teacher;
 import repository.TeacherDAO;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CreateNewClassAndAssignToTeacherAction implements Action {
     @Override
     public void executeQuery() throws SQLException {
         TeacherDAO teacherDAO = new TeacherDAO();
-        System.out.print("Type name of class: ");
+        String className;
+        ArrayList<String> classesList = new ArrayList<>();
+
         Scanner scanner = new Scanner(System.in);
-        String className = scanner.next();
+
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
+        String queryClasses = "SELECT class_name FROM dziennik.classes;";
+        ResultSet classes = statement.executeQuery(queryClasses);
+        while (classes.next()){
+            classesList.add(classes.getString("class_name"));
+        }
+        while (true) {
+            System.out.print("Type name of class: ");
+            className = scanner.next();
+            if (!(classesList.contains(className))){
+                break;
+            }
+        }
         int iter = 0;
         for (Teacher teacher : teacherDAO.getAll()) {
             iter+=1;
@@ -25,9 +41,22 @@ public class CreateNewClassAndAssignToTeacherAction implements Action {
             resultSet.next();
             System.out.println(teacher.teacherId + ": " + resultSet.getString("name") + " " + resultSet.getString("surname"));
         }
-        System.out.print("\n" +
-                "Select the number of the teacher you want to assign to the class: ");
-        int choice = scanner.nextInt();
+        int choice;
+        while (true) {
+            System.out.print("Select the number of the teacher you want to assign to the class(must be between 1 and " + iter +
+                    "): ");
+            try {
+                choice = scanner.nextInt();
+                if (choice >= 1 && choice <= iter) {
+                    break;
+                }
+                System.out.println("Number must be an integer between 1 and " + iter + ".");
+
+            } catch (InputMismatchException e) {
+                System.out.println("Number must be an integer between 1 and " + iter + ".");
+                scanner.next();
+            }
+        }
 
         String addingQuery =
                 "INSERT INTO classes(class_name, teacher_id, students_amount) values('" + className + "'," + teacherDAO.get(choice).teacherId +
@@ -41,6 +70,6 @@ public class CreateNewClassAndAssignToTeacherAction implements Action {
 
     @Override
     public String  getlabel() {
-        return "create new class and assign to teacher";
+        return "Create new school class and assign teacher.";
     }
 }
