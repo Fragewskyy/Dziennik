@@ -31,6 +31,8 @@ public class CreateNewClassAndAssignToTeacherAction implements Action {
             className = scanner.next();
             if (!(classesList.contains(className))){
                 break;
+            } else {
+                System.out.println("Class name like that already existed! Type again.");
             }
         }
         int iter = 0;

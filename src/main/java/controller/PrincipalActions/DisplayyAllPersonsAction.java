@@ -19,6 +19,6 @@ public class DisplayyAllPersonsAction implements Action {
 
     @Override
     public String  getlabel() {
-        return "Displayy All Persons";
+        return "Display all persons in system.";
     }
 }
