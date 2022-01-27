@@ -17,21 +17,15 @@ public class ShowAllAbsenceAction implements Action {
         String studentId=String.valueOf(studentDAO.getstudentid(MainView.getLogin()));
         String query ="SELECT (SELECT subject_name FROM dziennik.subjects where subject_id=\n" +
                 "(SELECT subject_id FROM dziennik.lessons where dziennik.absences.lesson_id=dziennik.lessons.lesson_id)) as subject,\n" +
-                "(SELECT dziennik.lessons.date FROM dziennik.lessons where dziennik.absences.lesson_id=dziennik.lessons.lesson_id) AS date,is_on_lesson \n" +
-                "from dziennik.absences where student_id="+studentId+" order by subject;";
+                "(SELECT dziennik.lessons.lesson_date FROM dziennik.lessons where dziennik.absences" +
+                ".lesson_id=dziennik.lessons.lesson_id) AS date,is_on_lesson " +
+                "from dziennik.absences where student_id="+studentId+" and is_on_lesson = 0 order by subject;";
         try {
             Connection connection = SQLController.Connect();
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery(query);
             while(rs.next()){
-                System.out.print(rs.getString("subject")+":" );
-                System.out.print(rs.getString("date") );
-                if(rs.getInt("is_on_lesson")==1) {
-                    System.out.println(" -current-");
-                }
-                else if(rs.getInt("is_on_lesson")==0){
-                    System.out.println(" -not current-");
-                }
+                System.out.println(rs.getDate("date") + " | " + rs.getString("subject"));
 
             }
         } catch (SQLException throwables) {
@@ -41,6 +35,6 @@ public class ShowAllAbsenceAction implements Action {
 
     @Override
     public String getlabel() {
-        return "show all absence ";
+        return "Display all my absences.";
     }
 }
