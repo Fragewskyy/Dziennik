@@ -12,7 +12,7 @@ import static controller.SQLController.PASSWORD;
 
 public class StudentDAO implements Dao{
     public String getstudentid( String login ){
-        String query="SELECT student_id  FROM dziennik.students where user_id=(SELECT user_id FROM dziennik.users where login='"+login+");";
+        String query="SELECT student_id  FROM dziennik.student where user_id=(SELECT user_id FROM dziennik.users where login='"+login+"');";
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);

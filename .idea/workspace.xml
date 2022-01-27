@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643190981896</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Principal Actions all debugged and fixed if needed.">
+      <created>1643193079196</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1643193079196</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +332,8 @@
     <MESSAGE value="Fixed labels of guardian actions, and tested DemonstrateIfmystudenthavelowgradesAction.java" />
     <MESSAGE value="little fixes" />
     <MESSAGE value="Fixed errors and exceptions catched" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors and exceptions catched" />
+    <MESSAGE value="Principal Actions all debugged and fixed if needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Principal Actions all debugged and fixed if needed." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
