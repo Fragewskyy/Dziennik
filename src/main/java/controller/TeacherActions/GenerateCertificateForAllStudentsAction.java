@@ -1,13 +1,18 @@
 package controller.TeacherActions;
 
+
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.draw.DottedLineSeparator;
+import com.itextpdf.text.pdf.parser.Path;
+import com.sun.scenario.effect.ImageData;
 import controller.Action;
 import controller.SQLController;
 import repository.ClassDAO;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -37,15 +42,19 @@ public class GenerateCertificateForAllStudentsAction implements Action {
         ClassDAO classDAO=new ClassDAO();
         Scanner scanner = new Scanner(System.in);
         System.out.println(" write your class name");
-        String classname=scanner.nextLine();
+        String classname=scanner.next();
         String classid=classDAO.getclassbyname(classname);
         ArrayList<Integer> classStudents=showstudentsfromclass(classid);
 
         for(int studentid:classStudents) {
-            Document document = new Document();
+
+            Rectangle pageSize = new Rectangle(800,1000);
+            pageSize.setBackgroundColor(new BaseColor(0xFF, 0xFF, 0xDE));
+            Document document = new Document(pageSize);
 
             String getNameAndSurnaemQuery="SELECT (SELECT name FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as name,(SELECT surname FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as surname from dziennik.students where student_id="+String.valueOf(studentid)+";";
             try {
+
                 Connection connection=SQLController.Connect();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(getNameAndSurnaemQuery);
@@ -53,8 +62,8 @@ public class GenerateCertificateForAllStudentsAction implements Action {
                 String namsurname=resultSet.getString("name")+resultSet.getString("surname");
                 System.out.println(namsurname);
                 PdfWriter.getInstance(document, new FileOutputStream(namsurname));
-            } catch (DocumentException e) {
-                e.printStackTrace();
+
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -66,11 +75,23 @@ public class GenerateCertificateForAllStudentsAction implements Action {
                 connection = SQLController.Connect();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(showgradesQuery);
+
+
+                Image img = Image.getInstance("godło polskimniejszy.jpg");
+                document.add(img);
+                StringBuilder pdfcontent= new StringBuilder("SZKOŁA PODSTAWOWA W RADOMIU\ner");
+
+                System.out.println(pdfcontent);
                 while(resultSet.next()) {
-                    String content=resultSet.getString("subject")+ resultSet.getInt("grade");
-                    Chunk chunk = new Chunk(content, font);
-                    document.add(chunk);
+                    String gradelinestring=resultSet.getString("subject")+": "+ resultSet.getInt("grade")+"\n";
+
+                    pdfcontent.append(gradelinestring);
+
+
                 }
+                System.out.println(pdfcontent);
+                Paragraph paragraph = new Paragraph(pdfcontent.toString());
+                document.add(paragraph);
             } catch (Exception throwables) {
                 throwables.printStackTrace();
             }
