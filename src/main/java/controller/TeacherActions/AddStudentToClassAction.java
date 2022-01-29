@@ -18,16 +18,7 @@ public class AddStudentToClassAction implements Action {
         StudentDAO studentDAO = new StudentDAO();
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
-        int iter = 0;
-        for (Student student : studentDAO.getAll()) {
-            iter += 1;
-            UserDAO userDAO = new UserDAO();
-            String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
-                    "student_id = " + student.studentId + ");";
-            ResultSet resultSet = statement.executeQuery(query);
-            resultSet.next();
-            System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
-        }
+
         System.out.print("Select the student you want to assign (Type ID): ");
         Scanner scanner = new Scanner(System.in);
         int choice = scanner.nextInt();
@@ -46,6 +37,6 @@ public class AddStudentToClassAction implements Action {
     @Override
     public String getlabel() {
 
-        return " add student to class";
+        return "Add student to class.";
     }
 }

@@ -1,16 +1,17 @@
 package controller.TeacherActions;
 
 import controller.Action;
+import controller.AdminActions.TurnOffOnpasswordAction;
 import controller.SQLController;
 import model.User;
 import model.peoplesRoles.Guardian;
+import model.peoplesRoles.Student;
 import repository.GuardianDAO;
 import repository.StudentDAO;
 import repository.UserDAO;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CreateNewGuardianAndAssignStudnetAction implements Action {
@@ -18,45 +19,115 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
 
 
     @Override
-    public void executeQuery() {
+    public void executeQuery() throws SQLException {
+
+        Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
+        Statement statement = connection.createStatement();
+
         UserDAO userDAO = new UserDAO();
         Scanner scanner = new Scanner(System.in);
         GuardianDAO guardianDAO=new GuardianDAO();
         StudentDAO studentDAO = new StudentDAO();
-        System.out.println("write new guardian login");
+        System.out.print("Type login of a new guardian: ");
         String newlogin=scanner.next();
-        System.out.println("write new guardian password");
-        String newpassword=scanner.next();
-        System.out.println("guardian name write ");
-        String guardianname=scanner.next();
-        System.out.println("write guardian surname");
-        String guardianSurname=scanner.next();
-        int guardianroleid=2;
-        User user=new User(newlogin,newpassword,guardianname,guardianSurname,guardianroleid);
-        int userid=0;
-        System.out.println("write guardian new phone number");
-        String guardianphonenumber=scanner.next();
-        Guardian guardian=new Guardian(guardianphonenumber,userid);
+        System.out.print("Type password of a new guardian: ");
 
-        try {
-            userDAO.save(user);
-            userid=userDAO.getId(newlogin);
-            guardianDAO.save(guardian);
-        } catch (SQLException e) {
-            e.printStackTrace();
+        String correctP;
+        while (true) {
+            System.out.print("Set password: ");
+            String newpassword=scanner.next();
+            if (TurnOffOnpasswordAction.isValidPassword(newpassword)) {
+                correctP = newpassword;
+                break;
+            } else {
+                System.out.println("Password doesn't match criteria. Type once again.(At least 6 letters, 1 big char," +
+                        " 1 special character and 1 number).");
+            }
         }
-        System.out.println("to what student you want to assign guardian(login)");
-        String studentlogin=scanner.next();
-        String studentid=studentDAO.getstudentid(studentlogin);
-        String query="Update dziennik.student SET guardian_id="+userid+" where student_id="+studentid+";";
-        try {
-            Connection connection= SQLController.Connect();
-            Statement statement=connection.createStatement();
-            statement.executeUpdate(query);
-            System.out.println("everything done :)");
-        } catch (SQLException e) {
-            e.printStackTrace();
+        String guardianname;
+        String guardianSurname;
+
+        ArrayList<String> nameAndSurnames = new ArrayList<>();
+
+        String queryOfGettingNames = "SELECT name, surname FROM users;";
+        ResultSet resultSet1 = statement.executeQuery(queryOfGettingNames);
+        while (resultSet1.next()){
+            nameAndSurnames.add(resultSet1.getString("name") + " " + resultSet1.getString("surname"));
         }
+
+        while (true) {
+            System.out.print("Type name of a new guardian: ");
+            guardianname = scanner.next();
+            System.out.print("Type surname of a new guardian: ");
+            guardianSurname = scanner.next();
+            if (nameAndSurnames.contains(guardianname + " " + guardianSurname)) {
+                System.out.println("Guardian with this name and surname already exists. Try again!");
+            } else {
+                break;
+            }
+
+        }
+        int guardianroleid=2;
+        User user = new User(newlogin,correctP,guardianname,guardianSurname,guardianroleid);
+
+        System.out.print("Type phone number to new guardian: ");
+        String guardianphonenumber=scanner.next();
+
+        userDAO.save(user);
+
+        Guardian guardian = new Guardian(guardianphonenumber, userDAO.getId(newlogin));
+
+        guardianDAO.save(guardian);
+
+        System.out.println("Guardian successfully added, now assign students.");
+        System.out.println();
+
+
+
+
+        int iter = 0;
+        for (Student student : studentDAO.getAll()) {
+            iter += 1;
+            String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
+                    "student_id = " + student.studentId + ");";
+            ResultSet resultSet = statement.executeQuery(query);
+            resultSet.next();
+            try {
+                System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
+            } catch (SQLException e) {
+                System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
+            }
+        }
+        String[] sList;
+        ArrayList<Integer> iList = new ArrayList<>();
+        Task:
+        while (true) {
+            System.out.print("Select students to which you want to assign guardian (for example: 1,2,3,4,5): ");
+            String s = scanner.next();
+            sList = s.split(",");
+            for (String s1 : sList) {
+                try {
+                    iList.add(Integer.parseInt(s1));
+                } catch (NumberFormatException e) {
+                    System.out.println("Try again!");
+                    continue Task;
+                }
+
+            }
+            break;
+        }
+        for (String s1 : sList) {
+            String assignGuardianQuery =
+                    "UPDATE `dziennik`.`student` SET `guardian_id` = '" + guardianDAO.get(userDAO.getId(newlogin)).guardianId +
+                    "' " +
+                    "WHERE " +
+                    "(`student_id` = " +
+                    "'" + Integer.parseInt(s1) + "');";
+            statement.executeUpdate(assignGuardianQuery);
+
+        }
+
+        System.out.println("Students succesfully assigned to a new guardian.");
 
 
     }
@@ -64,6 +135,6 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
     @Override
     public String getlabel() {
 
-        return "create new guardian and assign student ";
+        return "Create new guardian and assign student.";
     }
 }
