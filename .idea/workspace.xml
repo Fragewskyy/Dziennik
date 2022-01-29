@@ -4,17 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GenerateCertificate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetNumberOffLessonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/SetUpTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExecuteAllmarksAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/ExhibitIfmyStudentsHaveLowAbsenceAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateCertificateForAllStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/GenerateStudentCertificateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/peoplesRoles/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/ClassDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateStudentCertificateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateStudentCertificateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/UserDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +86,7 @@
       <recent name="C:\Users\tt\IdeaProjects\Dziennik1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Paweł\IdeaProjects\Dzienniksdsdfadfsdfs" />
       <recent name="C:\Users\tt\Desktop\Dziennikdddddd\src\main\java" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -291,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643190981896</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Changes">
+      <created>1643304124178</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1643304124178</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +340,8 @@
     <MESSAGE value="Fixed labels of guardian actions, and tested DemonstrateIfmystudenthavelowgradesAction.java" />
     <MESSAGE value="little fixes" />
     <MESSAGE value="Fixed errors and exceptions catched" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors and exceptions catched" />
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -16,6 +16,7 @@ public class UserDAO implements Dao{
         Date date = new Date(System.currentTimeMillis());
         return formatter.format(date);
     }
+
     public String getRoleByLogin(String login) throws SQLException {
         String query =
                 "SELECT role_name FROM dziennik.role WHERE role_id = (SELECT role_id from dziennik.users WHERE login = '"+login+"');";
