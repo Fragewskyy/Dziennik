@@ -35,7 +35,11 @@ public class CauseMultipleCertificateAction implements Action {
                 Connection connection= SQLController.Connect();
                 Statement statement= connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(getuserNameAndSurnameQuery);
-                System.out.println(index+":"+resultSet.getString("name")+" "+resultSet.getString("surname"));
+                while (resultSet.next()) {
+                    System.out.println(index+":"+resultSet.getString("name")+" "+resultSet.getString("surname"));
+                    index++;
+                }
+
 
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
