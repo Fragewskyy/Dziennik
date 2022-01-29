@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/GenerateCertificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CauseMultipleCertificateAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
