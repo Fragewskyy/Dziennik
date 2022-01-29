@@ -6,13 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/DisplayAllGradesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/studentActions/ShowAllAbsenceAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddStudentToClassAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/GuardianDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/AddStudentToClassAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/repository/GuardianDAO.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643193079196</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Student actions fixed and debugged">
+      <created>1643312745370</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1643312745370</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,7 +343,8 @@
     <MESSAGE value="little fixes" />
     <MESSAGE value="Fixed errors and exceptions catched" />
     <MESSAGE value="Principal Actions all debugged and fixed if needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Principal Actions all debugged and fixed if needed." />
+    <MESSAGE value="Student actions fixed and debugged" />
+    <option name="LAST_COMMIT_MESSAGE" value="Student actions fixed and debugged" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
