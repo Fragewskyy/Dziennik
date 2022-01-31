@@ -64,6 +64,6 @@ public class CauseMultipleCertificateAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Create multiple certificates";
+        return "Generate multiple certificates.";
     }
 }

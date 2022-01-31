@@ -12,6 +12,6 @@ public class SetNumberOffLessonsAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Set number of lessons";
+        return "Set number of lessons per year.";
     }
 }

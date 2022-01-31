@@ -1,6 +1,7 @@
 package controller.UserActions;
 
 import controller.Action;
+import controller.AdminActions.TurnOffOnpasswordAction;
 import controller.SQLController;
 import repository.UserDAO;
 import s.MainView;
@@ -16,15 +17,24 @@ public class ChangePasswordAction implements Action {
     public void executeQuery() {
         UserDAO userDAO=new UserDAO();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("What new password do you want??");
-        String newpassword = scanner.next();
+        String correctP;
+        while (true) {
+            System.out.print("Set your new password: ");
+            String p = scanner.next();
+            if (TurnOffOnpasswordAction.isValidPassword(p)) {
+                correctP = p;
+                break;
+            } else {
+                System.out.println("Password doesn't match criteria. Type once again.");
+            }
+        }
         String userId= null;
         try {
             userId = String.valueOf(userDAO.getId(MainView.getLogin()));
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        String query="update  dziennik.users set users.password='"+newpassword+"' WHERE users.user_id="+userId+"; ";
+        String query="update  dziennik.users set users.password='"+correctP+"' WHERE users.user_id="+userId+"; ";
         try {
             Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
             Statement statement = connection.createStatement();
@@ -38,6 +48,6 @@ public class ChangePasswordAction implements Action {
     @Override
     public String getlabel() {
 
-        return "Change Password ";
+        return "Change password.";
     }
 }

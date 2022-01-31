@@ -51,6 +51,6 @@ public class MakeNewStudentAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Make new Student";
+        return "Create new student.";
     }
 }

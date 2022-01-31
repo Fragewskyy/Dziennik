@@ -20,6 +20,6 @@ public class VerifyStudentsAbsenceAction implements Action {
     @Override
     public String getlabel() {
 
-        return "Verify student absence";
+        return "Verify student absences.";
     }
 }

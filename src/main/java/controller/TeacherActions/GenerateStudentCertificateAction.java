@@ -56,6 +56,6 @@ public class GenerateStudentCertificateAction implements Action {
     @Override
     public String getlabel() {
 
-        return "generate student certificate";
+        return "Generate student's certificate.";
     }
 }

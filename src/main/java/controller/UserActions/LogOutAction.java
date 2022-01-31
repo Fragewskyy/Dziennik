@@ -11,6 +11,6 @@ public class LogOutAction implements Action {
     @Override
     public String getlabel() {
 
-        return "Log out";
+        return "Log out.";
     }
 }

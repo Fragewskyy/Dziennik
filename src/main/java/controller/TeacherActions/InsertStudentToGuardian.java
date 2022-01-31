@@ -34,6 +34,6 @@ public class InsertStudentToGuardian implements Action {
 
     @Override
     public String getlabel() {
-        return "insert Student to Guardian";
+        return "Assign student to a guardian.";
     }
 }
