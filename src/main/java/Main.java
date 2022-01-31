@@ -43,6 +43,7 @@ public class Main {
     //przykladowy principal: lbenettelli12@smugmug.com 6mJUIsofsLZm
     //przykladowy teacher: afowliez@microsoft.com omvKgRv
     //przykladowy student: mscreen3@jimdo.com MwxbdR7vmBS
+    //przykladowy admin: cverden13@nbcnews.com 9mA2g7N
 
 
 }

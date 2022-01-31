@@ -73,6 +73,6 @@ public class ModifyGradeAction implements Action {
 
     @Override
     public String getlabel() {
-        return "modify grade ";
+        return "Modify grade.";
     }
 }
