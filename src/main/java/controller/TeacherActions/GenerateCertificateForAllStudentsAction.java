@@ -64,6 +64,6 @@ public class GenerateCertificateForAllStudentsAction implements Action {
     @Override
     public String getlabel() {
 
-        return "generate cartificate for all student";
+        return "Generate certificates for all students in class.";
     }
 }
