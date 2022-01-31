@@ -1,5 +1,6 @@
-package view;
+package s;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConsoleView implements View.View {
@@ -13,9 +14,20 @@ public class ConsoleView implements View.View {
 
     @Override
     public int readInt(String label) {
-        System.out.println(label+": ");
-        int value = scanner.nextInt();
-        scanner.nextLine();
+
+        int value;
+        while (true) {
+            System.out.print(label+": ");
+            try {
+                value = scanner.nextInt();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("Wrong choice. Try again!");
+                scanner.next();
+            }
+
+        }
+
         return value;
     }
 

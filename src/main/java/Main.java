@@ -2,8 +2,8 @@
 import config.Config;
 import config.Configchanger;
 
-import view.MainView;
-import view.Menu;
+import s.MainView;
+import s.Menu;
 import controller.Action;
 
 

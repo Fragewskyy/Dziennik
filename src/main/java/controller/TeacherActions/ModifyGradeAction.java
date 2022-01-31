@@ -2,10 +2,9 @@ package controller.TeacherActions;
 
 import controller.Action;
 import controller.SQLController;
-import model.peoplesRoles.Teacher;
 import repository.StudentDAO;
 import repository.TeacherDAO;
-import view.MainView;
+import s.MainView;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

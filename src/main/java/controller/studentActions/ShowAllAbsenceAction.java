@@ -3,7 +3,7 @@ package controller.studentActions;
 import controller.Action;
 import controller.SQLController;
 import repository.StudentDAO;
-import view.MainView;
+import s.MainView;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

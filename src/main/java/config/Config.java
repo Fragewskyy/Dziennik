@@ -1,7 +1,7 @@
 package config;
 
 import controller.Action;
-import view.Menu;
+import s.Menu;
 
 import java.util.List;
 
