@@ -2,9 +2,7 @@ package controller.studentActions;
 
 import controller.Action;
 import controller.SQLController;
-import repository.UserDAO;
-import sun.applet.Main;
-import view.MainView;
+import s.MainView;
 
 import java.sql.*;
 

@@ -1,9 +1,8 @@
 package repository;
 
 import controller.SQLController;
-import model.peoplesRoles.Admin;
 import model.peoplesRoles.Teacher;
-import view.MainView;
+import s.MainView;
 
 import java.sql.*;
 import java.util.ArrayList;

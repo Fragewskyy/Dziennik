@@ -1,4 +1,4 @@
-package view;
+package s;
 
 import controller.SQLController;
 

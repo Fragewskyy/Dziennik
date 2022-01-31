@@ -2,14 +2,13 @@ package controller.GuardianActions;
 
 import controller.Action;
 import controller.SQLController;
-import controller.UserActions.SendTextMessegeAction;
 import model.User;
 import model.peoplesRoles.Guardian;
 import model.peoplesRoles.Student;
 import repository.GuardianDAO;
 import repository.StudentDAO;
 import repository.UserDAO;
-import view.MainView;
+import s.MainView;
 
 import java.sql.*;
 import java.util.ArrayList;

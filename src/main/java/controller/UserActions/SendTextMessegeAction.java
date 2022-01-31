@@ -3,10 +3,9 @@ package controller.UserActions;
 import controller.Action;
 import controller.SQLController;
 import repository.UserDAO;
-import view.MainView;
+import s.MainView;
 
 import java.sql.*;
-import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 public class SendTextMessegeAction implements Action {

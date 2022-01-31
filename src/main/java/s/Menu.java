@@ -1,4 +1,4 @@
-package view;
+package s;
 
 import controller.Action;
 
@@ -21,8 +21,15 @@ public class Menu {
     }
 
     public Action getChoice(List<Action> actions) {
-        int choice = view.readInt("Choice");
-        return actions.get(choice);
+        while (true) {
+            try {
+                int choice = view.readInt("Choose action");
+                return actions.get(choice);
+            } catch (ArrayIndexOutOfBoundsException e) {
+                System.out.println("Wrong choice. Try again!");
+            }
+
+        }
     }
 }
 
