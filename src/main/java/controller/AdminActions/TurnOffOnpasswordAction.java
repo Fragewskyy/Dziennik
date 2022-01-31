@@ -55,6 +55,7 @@ public class TurnOffOnpasswordAction implements Action {
         Statement statement = connection.createStatement();
         String query = "SELECT password_check FROM admin where admin_id=1;";
         ResultSet resultSet = statement.executeQuery(query);
+        resultSet.next();
         if(resultSet.getInt("password_check") == 1) {
             passChecking = true;
         } else {
@@ -64,7 +65,7 @@ public class TurnOffOnpasswordAction implements Action {
 
     @Override
     public String getlabel() {
-        return "Turn Off or On password";
+        return "Turn on/off checking password format during changing it.";
     }
 }
 //Login:
