@@ -92,7 +92,8 @@ public class StudentDAO implements Dao{
 
     public void save(Student student) throws SQLException {
         String query =
-                "INSERT INTO dziennik.students (user_id, class_id, teacher_id, phone_number) VALUES (" + student.userId + ", " + student.classId + ", " + student.guardianId + ", '" + student.phoneNumber + "');";
+                "INSERT INTO dziennik.student (user_id, class_id, guardian_id, phone_number) VALUES (" + student.userId +
+                        ", " + student.classId + ", " + student.guardianId + ", '" + student.phoneNumber + "');";
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,
                 PASSWORD);
         Statement statement = connection.createStatement();

@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/AdminActions/TurnOffOnpasswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AdminActions/TurnOffOnpasswordAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserActions/ChangePasswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserActions/ChangePasswordAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/CreateNewGuardianAndAssignStudnetAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/MakeNewStudentAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetNumberOffLessonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CauseMultipleCertificateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/CauseMultipleCertificateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateStudentCertificateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateStudentCertificateAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/MakeNewStudentAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/VerifyStudentsAbsenceAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/VerifyStudentsAbsenceAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserActions/LogOutAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserActions/LogOutAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643673279527</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="na wszelki wypadek">
+      <created>1643674848486</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1643674848486</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +358,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Guardian i admin interfejsy" />
     <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
     <MESSAGE value="Wyświetla od teraz oceny" />
     <MESSAGE value="jestem złodziejem ale z gracją więc no" />
@@ -371,7 +382,8 @@
     <MESSAGE value="poprawiłem config ze w razie blednego hasla czy loginu nie wywala bledu tylko grzecznie o tym informuje." />
     <MESSAGE value="( ͡° ͜ʖ ͡°)" />
     <MESSAGE value="poprawiłem labele akcji" />
-    <option name="LAST_COMMIT_MESSAGE" value="poprawiłem labele akcji" />
+    <MESSAGE value="na wszelki wypadek" />
+    <option name="LAST_COMMIT_MESSAGE" value="na wszelki wypadek" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
