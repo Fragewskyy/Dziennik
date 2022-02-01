@@ -29,11 +29,28 @@ public class SetUpTeacherAction implements Action {
         }
 
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Type name: ");
-        String n = scanner.next();
-        System.out.print("Type surname: ");
-        String s = scanner.next();
+        String teacherName;
+        String teacherSurname;
 
+        ArrayList<String> nameAndSurnames = new ArrayList<>();
+
+        String queryOfGettingNames = "SELECT name, surname FROM users where role_id = 3;";
+        ResultSet resultSet1 = statement.executeQuery(queryOfGettingNames);
+        while (resultSet1.next()){
+            nameAndSurnames.add(resultSet1.getString("name") + " " + resultSet1.getString("surname"));
+        }
+
+        while (true) {
+            System.out.print("Type name of a new teacher: ");
+            teacherName = scanner.next();
+            System.out.print("Type surname of a new teacher: ");
+            teacherSurname = scanner.next();
+            if (nameAndSurnames.contains(teacherName + " " + teacherSurname)) {
+                System.out.println("Guardian with this name and surname already exists. Try again!");
+            } else {
+                break;
+            }
+        }
         String l;
 
         while(true){
@@ -61,7 +78,7 @@ public class SetUpTeacherAction implements Action {
             }
         }
 
-        User user = new User(1, l, correctP, n, s, 3);
+        User user = new User(1, l, correctP, teacherName, teacherSurname, 3);
         TeacherDAO teacherDAO = new TeacherDAO();
         UserDAO userDAO = new UserDAO();
         userDAO.save(user);
