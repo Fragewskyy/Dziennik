@@ -42,6 +42,7 @@ public class ChangePasswordAction implements Action {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        System.out.println("Password changed successfully!");
 
     }
 

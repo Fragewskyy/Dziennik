@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="( ͡° ͜ʖ ͡°)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/ChangePasswordAction.java" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AdminActions/TurnOffOnpasswordAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/AdminActions/TurnOffOnpasswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AdminActions/TurnOffOnpasswordAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/UserActions/ChangePasswordAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/UserActions/ChangePasswordAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/studentActions/DisplayAllGradesAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643672730141</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="poprawiłem labele akcji">
+      <created>1643673279527</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1643673279527</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,7 +370,8 @@
     <MESSAGE value="Fixed CreateNewGuardianAndAssignStudnetAction.java and AddStudentToClassAction.java" />
     <MESSAGE value="poprawiłem config ze w razie blednego hasla czy loginu nie wywala bledu tylko grzecznie o tym informuje." />
     <MESSAGE value="( ͡° ͜ʖ ͡°)" />
-    <option name="LAST_COMMIT_MESSAGE" value="( ͡° ͜ʖ ͡°)" />
+    <MESSAGE value="poprawiłem labele akcji" />
+    <option name="LAST_COMMIT_MESSAGE" value="poprawiłem labele akcji" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
