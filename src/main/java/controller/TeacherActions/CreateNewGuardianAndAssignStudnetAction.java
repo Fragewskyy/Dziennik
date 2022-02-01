@@ -24,17 +24,35 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
 
+        ArrayList<String> loginArray = new ArrayList<>();
+
+        String queryOfGettingLogin = "SELECT login from users;";
+        ResultSet loginList = statement.executeQuery(queryOfGettingLogin);
+
+        while (loginList.next()) {
+            loginArray.add(loginList.getString("login"));
+        }
+
         UserDAO userDAO = new UserDAO();
         Scanner scanner = new Scanner(System.in);
         GuardianDAO guardianDAO=new GuardianDAO();
         StudentDAO studentDAO = new StudentDAO();
-        System.out.print("Type login of a new guardian: ");
-        String newlogin=scanner.next();
-        System.out.print("Type password of a new guardian: ");
+
+        String newlogin;
+        while (true) {
+            System.out.print("Type login of a new guardian: ");
+            newlogin = scanner.next();
+            if (loginArray.contains(newlogin)) {
+                System.out.println("This login already exists in database. Try again.");
+            } else {
+                break;
+            }
+        }
+
 
         String correctP;
         while (true) {
-            System.out.print("Set password: ");
+            System.out.print("Type password of a new guardian: ");
             String newpassword=scanner.next();
             if (TurnOffOnpasswordAction.isValidPassword(newpassword)) {
                 correctP = newpassword;
@@ -49,7 +67,7 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
 
         ArrayList<String> nameAndSurnames = new ArrayList<>();
 
-        String queryOfGettingNames = "SELECT name, surname FROM users;";
+        String queryOfGettingNames = "SELECT name, surname FROM users where role_id = 2;";
         ResultSet resultSet1 = statement.executeQuery(queryOfGettingNames);
         while (resultSet1.next()){
             nameAndSurnames.add(resultSet1.getString("name") + " " + resultSet1.getString("surname"));
@@ -68,7 +86,7 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
 
         }
         int guardianroleid=2;
-        User user = new User(newlogin,correctP,guardianname,guardianSurname,guardianroleid);
+        User user = new User(newlogin ,correctP,guardianname,guardianSurname,guardianroleid);
 
         System.out.print("Type phone number to new guardian: ");
         String guardianphonenumber=scanner.next();
@@ -102,12 +120,18 @@ public class CreateNewGuardianAndAssignStudnetAction implements Action {
         ArrayList<Integer> iList = new ArrayList<>();
         Task:
         while (true) {
+            iList.clear();
             System.out.print("Select students to which you want to assign guardian (for example: 1,2,3,4,5): ");
             String s = scanner.next();
             sList = s.split(",");
             for (String s1 : sList) {
+
                 try {
                     iList.add(Integer.parseInt(s1));
+                    if (Integer.parseInt(s1) >= 1 && Integer.parseInt(s1) >= iter){
+                        System.out.println("Try again!");
+                        continue Task;
+                    }
                 } catch (NumberFormatException e) {
                     System.out.println("Try again!");
                     continue Task;
