@@ -67,27 +67,49 @@ public class SendExcuseToTeacherAction implements Action {
                 System.out.println("Your student aren't absent.");
                 continue;
             }
-            System.out.print("Type IDs of absences, which you want excuse divided by space, for example (1 2 3 4 5), " +
-                    "to excuse all type 'all'" +
-                    ": ");
-            Scanner scanner = new Scanner(System.in);
-            String s = scanner.nextLine();
-            String chosenAbsences = "";
-            if (Objects.equals(s, "all")){
-                for (String absence : absences) {
-                    chosenAbsences += absence;
-                }
-            } else {
-                String[] sModified = s.split(" ");
+
+            String chosenAbsences;
 
 
-                int iter1 = 0;
+            Task:
+            while (true){
+                chosenAbsences = "";
+                System.out.print("Type IDs of absences, which you want excuse divided by space, for example (1,2,3," +
+                        "4,5), " +
+                        "to excuse all type 'all'" +
+                        ": ");
+                Scanner scanner = new Scanner(System.in);
 
-                for (String s1 : sModified) {
-                    iter1 += 1;
-                    Student student = studentDAO.get(studentId);
-                    User user = userDAO.get(student.userId);
-                    chosenAbsences += absences.get(Integer.parseInt(s1) - 1);
+                String s = scanner.next();
+
+                if (Objects.equals(s, "all")){
+                    for (String absence : absences) {
+                        chosenAbsences += absence;
+                    }
+                    break;
+                } else {
+                    try {
+                        String[] sModified = s.split(",");
+
+
+                        int iter1 = 0;
+
+                        for (String s1 : sModified) {
+                            if (Integer.parseInt(s1) < 1 || Integer.parseInt(s1) >iter){
+                                System.out.println("Try again!");
+                                continue Task;
+                            }
+                            iter1 += 1;
+                            Student student = studentDAO.get(studentId);
+                            User user = userDAO.get(student.userId);
+
+                            chosenAbsences += absences.get(Integer.parseInt(s1) - 1);
+
+                        }
+                        break;
+                    } catch (NumberFormatException e) {
+                        System.out.println("Try again!");
+                    }
                 }
             }
 

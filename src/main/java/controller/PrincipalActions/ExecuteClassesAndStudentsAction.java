@@ -24,7 +24,11 @@ public class ExecuteClassesAndStudentsAction implements Action {
             String query = "SELECT class_name FROM classes WHERE class_id = " + student.classId + ";";
             ResultSet resultSet = statement.executeQuery(query);
             resultSet.next();
-            System.out.println(iter + ". Student - " + "Name: " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Class: " + resultSet.getString("class_name"));
+            try {
+                System.out.println(iter + ". Student - Name: " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
+            } catch (SQLException e) {
+                System.out.println(iter + ". Student - Name: " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
+            }
         }
         for (Teacher teacher : teacherDAO.getAll()) {
             iter += 1;
