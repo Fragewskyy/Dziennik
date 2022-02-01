@@ -19,12 +19,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class GenerateCertificateForAllStudentsAction implements Action {
     public static ArrayList<Integer> showstudentsfromclass(String classid){
         java.util.List<Integer> result = new ArrayList<Integer>();
-        String query = "SELECT student_id FROM dziennik.students where class_id="+classid+";";
+        String query = "SELECT student_id FROM dziennik.student where class_id="+classid+";";
         try {
             Connection connection= SQLController.Connect();
             Statement statement = connection.createStatement();
@@ -39,13 +40,39 @@ public class GenerateCertificateForAllStudentsAction implements Action {
         return null;
     }
     @Override
-    public void executeQuery() {
+    public void executeQuery() throws SQLException {
+        Connection connection= SQLController.Connect();
+        Statement statement = connection.createStatement();
+
         ClassDAO classDAO=new ClassDAO();
         Scanner scanner = new Scanner(System.in);
-        System.out.println(" write your class name");
-        String classname=scanner.next();
-        String classid=classDAO.getclassbyname(classname);
-        ArrayList<Integer> classStudents=showstudentsfromclass(classid);
+
+        int iterator = 0;
+
+        String query1 = "SELECT * FROM classes;";
+        ResultSet resultSet1 = statement.executeQuery(query1);
+        while (resultSet1.next()){
+            iterator += 1;
+            System.out.println(resultSet1.getInt("class_id") + ". " + resultSet1.getString("class_name"));
+        }
+
+        int choice1;
+        while (true) {
+            System.out.print("Select the class to which you want to assign the student (type ID): ");
+            try {
+                choice1 = scanner.nextInt();
+                if (choice1 >= 1 && choice1 <= iterator) {
+                    break;
+                }
+                System.out.println("Try again!");
+            } catch (InputMismatchException e) {
+                System.out.println("Try again!");
+                scanner.next();
+            }
+        }
+
+
+        ArrayList<Integer> classStudents=showstudentsfromclass(String.valueOf(choice1));
 
         for(int studentid:classStudents) {
 
@@ -57,6 +84,8 @@ public class GenerateCertificateForAllStudentsAction implements Action {
             }
 
         }
+
+        System.out.println("Successfully generated!");
 
 
     }
