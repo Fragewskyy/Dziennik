@@ -19,7 +19,8 @@ public class GenerateCertificate {
         pageSize.setBackgroundColor(new BaseColor(0xFF, 0xFF, 0xDE));
         Document document = new Document(pageSize);
 
-        String getNameAndSurnaemQuery="SELECT (SELECT name FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as name,(SELECT surname FROM dziennik.users where dziennik.users.user_id=dziennik.students.user_id) as surname from dziennik.students where student_id="+String.valueOf(studentid)+";";
+        String getNameAndSurnaemQuery="SELECT name, surname from users where users.user_id = (select user_id from " +
+                "student where student_id = " + studentid + ")";
         try {
 
             Connection connection=SQLController.Connect();
@@ -37,7 +38,10 @@ public class GenerateCertificate {
         Font font = FontFactory.getFont(FontFactory.COURIER, 32, BaseColor.BLACK);
         Connection connection= null;
         document.open();
-        String showgradesQuery="SELECT (SELECT (SELECT subject_name FROM dziennik.subjects where dziennik.lessons.subject_id=dziennik.subjects.subject_id) FROM dziennik.lessons where dziennik.grades.lesson=dziennik.lessons.lesson_id) as subject, round(avg(grade)) as grade  FROM dziennik.grades where student_id="+studentid+" group by subject;";
+        String showgradesQuery="SELECT (SELECT (SELECT subject_name FROM dziennik.subjects where dziennik.lessons" +
+                ".subject_id=dziennik.subjects.subject_id) FROM dziennik.lessons where dziennik.grades" +
+                ".lesson_id=dziennik.lessons.lesson_id) as subject, round(avg(grade)) as grade  FROM dziennik.grades " +
+                "where student_id="+studentid+" group by subject;";
         try {
             connection = SQLController.Connect();
             Statement statement = connection.createStatement();
