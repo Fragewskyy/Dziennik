@@ -15,6 +15,7 @@ public class GenerateCertificate {
 
 
     public void executeQuery(Integer studentid) throws SQLException {
+        System.out.println("dizała");
         Rectangle pageSize = new Rectangle(800,1000);
         pageSize.setBackgroundColor(new BaseColor(0xFF, 0xFF, 0xDE));
         Document document = new Document(pageSize);

@@ -15,4 +15,28 @@ public class Guardian {
         this.phoneNumber = phoneNumber;
         this.userId = userId;
     }
+
+    public int getGuardianId() {
+        return guardianId;
+    }
+
+    public void setGuardianId(int guardianId) {
+        this.guardianId = guardianId;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
 }

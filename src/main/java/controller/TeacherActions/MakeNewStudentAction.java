@@ -84,6 +84,7 @@ public class MakeNewStudentAction implements Action {
 
         User user=new User(1,newlogin,correctP,studentName,studentSurname,1);
         try {
+
             userDAO.save(user);
         } catch (SQLException throwables) {
             throwables.printStackTrace();

@@ -24,7 +24,7 @@ public class TeacherDAO implements Dao{
         ///tu będzie error spokojnie
         return "error";
     }
-    public String  getsubject(){
+    public String  getlessonid(){
         UserDAO userdao=new UserDAO();
         String userid=null;
         try {
@@ -32,7 +32,7 @@ public class TeacherDAO implements Dao{
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        String query="SELECT (SELECT subject_name FROM dziennik.subjects where dziennik.subjects.subject_id=dziennik.teacher.subject_id) AS sb FROM dziennik.teacher where user_id="+userid+"; ";
+        String query="SELECT lesson_id FROM dziennik.teacher where user_id="+userid+"; ";
         try {
             Connection connection=SQLController.Connect();
             Statement statement = connection.createStatement();
