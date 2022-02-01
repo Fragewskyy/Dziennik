@@ -5,6 +5,7 @@ import controller.SQLController;
 import model.peoplesRoles.Student;
 import repository.StudentDAO;
 import repository.TeacherDAO;
+import repository.UserDAO;
 import s.MainView;
 
 import java.sql.Connection;
@@ -17,6 +18,7 @@ public class AddGradeAction  implements Action {
 
     @Override
     public void executeQuery() {
+        UserDAO userDAO = new UserDAO();
         StudentDAO studentDAO = new StudentDAO();
         TeacherDAO teacherdao = new TeacherDAO();
         System.out.println("Select student you want to add a grade");
@@ -28,6 +30,8 @@ public class AddGradeAction  implements Action {
                 iter += 1;
                 String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
                         "student_id = " + student.studentId + ");";
+                Connection connection=SQLController.Connect();
+                Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(query);
                 resultSet.next();
                 try {
@@ -36,13 +40,35 @@ public class AddGradeAction  implements Action {
                     System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
                 }
             }
+
+
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
+        int choice=scanner.nextInt();
+        int studentid= 0;
+        try {
+            studentid = studentDAO.getAll().get(choice-1).studentId;
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        System.out.println("what grade");
+        String grade=scanner.next();
+        String addgradeQuery="insert into dziennik.grades(grade,student_id,lesson_id) values("+grade+","+studentid+","+teacherdao.getlessonid()+");";
+        Connection connection= null;
+        try {
+            connection = SQLController.Connect();
+            Statement statement = connection.createStatement();
+            statement.executeUpdate(addgradeQuery);
+            System.out.println("you added a grade");
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
     }
-        String show="SELECT grade_id,(SELECT subject_name FROM dziennik.subjects where dziennik.lessons.subject_id=dziennik.subjects.subject_id) ,grade ,date FROM dziennik.grades inner join dziennik.lessons on dziennik.grades.lesson=dziennik.lessons.lesson_id where \n" +
-                "                student_id="+studentid+" and grades.lesson in (SELECT lesson_id FROM dziennik.lessons where teacher_id="+teacherid+")  ;";
-    }
+
+
 
     @Override
     public String getlabel() {
