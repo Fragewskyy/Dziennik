@@ -3,6 +3,7 @@ package config;
 import controller.Action;
 import controller.GuardianActions.*;
 import controller.UserActions.ChangePasswordAction;
+import controller.UserActions.InboxAction;
 import controller.UserActions.LogOutAction;
 import controller.UserActions.SendTextMessegeAction;
 import s.ConsoleView;
@@ -16,7 +17,7 @@ public class GuardianConfig implements Config{
     @Override
     public List<Action> inicializactions() {
         System.out.println("Logged as guardian.");
-        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction()
+        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new InboxAction()
                 ,new DemonstrateIfmystudenthavelowgradesAction(),new DisplayAllAbsenceOfMyStudentsAction(),
                 new ExecuteAllmarksAction(),new ExhibitIfmyStudentsHaveLowAbsenceAction(),new GenerateReportsForStudentswhoFailAction(),
                 new SendExcuseToTeacherAction(),new ShowAllgradesOfMyStudentAction()};
