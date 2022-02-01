@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="3:55 - wyłaczam komputer jutro konczymy">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/InboxAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/GuardianActions/SendExcuseToTeacherAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/DisplayyAllPersonsAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/ExecuteClassesAndStudentsAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AdminConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/GuardianConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/PrincipalConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/StudentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/GuardianActions/SendExcuseToTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/GuardianActions/SendExcuseToTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/DisplayyAllPersonsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/ExecuteClassesAndStudentsAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PrincipalActions/SetUpTeacherAction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/GenerateCertificateForAllStudentsAction.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -362,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643681122964</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="3:55 - wyłaczam komputer jutro konczymy">
+      <created>1643684115048</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1643684115048</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +394,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
     <MESSAGE value="SendExcuseToTeacherAction.java done :)" />
     <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
     <MESSAGE value="DisplayyAllPersonsAction.java - done :)" />
@@ -404,7 +418,8 @@
     <MESSAGE value="2:12 cały czas do przodu, nie chce mi sie spac" />
     <MESSAGE value="2:50 kurna zaraz bedzie jasno a tu tyle bledow" />
     <MESSAGE value="3:05 passsssss" />
-    <option name="LAST_COMMIT_MESSAGE" value="3:05 passsssss" />
+    <MESSAGE value="3:55 - wyłaczam komputer jutro konczymy" />
+    <option name="LAST_COMMIT_MESSAGE" value="3:55 - wyłaczam komputer jutro konczymy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

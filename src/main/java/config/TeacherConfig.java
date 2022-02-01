@@ -3,6 +3,7 @@ package config;
 import controller.Action;
 import controller.TeacherActions.*;
 import controller.UserActions.ChangePasswordAction;
+import controller.UserActions.InboxAction;
 import controller.UserActions.LogOutAction;
 import controller.UserActions.SendTextMessegeAction;
 import s.ConsoleView;
@@ -16,7 +17,7 @@ public class TeacherConfig implements Config{
     @Override
     public List<Action> inicializactions() {
         System.out.println("Logged as teacher.");
-        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(), new AddStudentToClassAction(),new CauseMultipleCertificateAction(),new CreateNewGuardianAndAssignStudnetAction(),new GenerateCertificateForAllStudentsAction(),new GenerateStudentCertificateAction(),new InsertStudentToGuardian(),new MakeNewStudentAction(),new ModifyGradeAction(),new VerifyStudentsAbsenceAction()};
+        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new InboxAction(), new AddStudentToClassAction(),new CauseMultipleCertificateAction(),new CreateNewGuardianAndAssignStudnetAction(),new GenerateCertificateForAllStudentsAction(),new GenerateStudentCertificateAction(),new InsertStudentToGuardian(),new MakeNewStudentAction(),new ModifyGradeAction(),new VerifyStudentsAbsenceAction()};
 
         List<Action> actions= Arrays.asList(helper);
         return actions;

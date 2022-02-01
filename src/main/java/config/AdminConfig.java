@@ -3,6 +3,7 @@ package config;
 import controller.Action;
 import controller.AdminActions.TurnOffOnpasswordAction;
 import controller.UserActions.ChangePasswordAction;
+import controller.UserActions.InboxAction;
 import controller.UserActions.LogOutAction;
 import controller.UserActions.SendTextMessegeAction;
 import s.ConsoleView;
@@ -16,7 +17,7 @@ public class AdminConfig implements Config{
     @Override
     public List<Action> inicializactions() {
         System.out.println("Logged as admin.");
-        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new TurnOffOnpasswordAction()};
+        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new InboxAction(),new TurnOffOnpasswordAction()};
 
         List<Action> actions= Arrays.asList(helper);
         return actions;
