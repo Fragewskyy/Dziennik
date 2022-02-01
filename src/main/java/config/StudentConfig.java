@@ -3,6 +3,7 @@ package config;
 import controller.Action;
 
 import controller.UserActions.ChangePasswordAction;
+import controller.UserActions.InboxAction;
 import controller.UserActions.LogOutAction;
 import controller.UserActions.SendTextMessegeAction;
 import controller.studentActions.DisplayAllGradesAction;
@@ -19,7 +20,7 @@ public class StudentConfig implements Config{
     public List<Action> inicializactions() {
         System.out.println("Logged as student.");
         Action helper[]=new Action[] {new ChangePasswordAction(),
-                new LogOutAction(),new SendTextMessegeAction(),new DisplayAllGradesAction(),new ShowAllAbsenceAction()};
+                new LogOutAction(),new SendTextMessegeAction(),new InboxAction(),new DisplayAllGradesAction(),new ShowAllAbsenceAction()};
 
         List<Action> actions= Arrays.asList(helper);
         return actions;
