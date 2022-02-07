@@ -45,9 +45,10 @@ public class CreateNewClassAndAssignToTeacherAction implements Action {
         }
         int choice;
         while (true) {
-            System.out.print("Select the number of the teacher you want to assign to the class(must be between 1 and " + iter +
-                    "): ");
+
             try {
+                System.out.print("Select the number of the teacher you want to assign to the class(must be between 1 and " + iter +
+                        "): ");
                 choice = scanner.nextInt();
                 if (choice >= 1 && choice <= iter) {
                     break;
