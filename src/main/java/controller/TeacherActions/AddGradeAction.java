@@ -68,10 +68,8 @@ public class AddGradeAction  implements Action {
 
     }
 
-
-
     @Override
     public String getlabel() {
-        return null;
+        return "Add student a grade.";
     }
 }
