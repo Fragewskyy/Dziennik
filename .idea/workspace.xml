@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="Changes">
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddGradeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/InsertStudentToGuardian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/TeacherDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/InboxAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/InboxAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/AdminConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/AdminConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/GuardianConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/GuardianConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/PrincipalConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/PrincipalConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/StudentConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/StudentConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/TeacherConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/TeacherConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +81,6 @@
       <recent name="C:\Users\tt\IdeaProjects\Dziennik1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Paweł\IdeaProjects\Dzienniksdasddsa\src\main\java" />
       <recent name="C:\Users\tt\Desktop\Dziennikdddddd\src\main\java" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -300,14 +305,77 @@
       <option name="project" value="LOCAL" />
       <updated>1643312745370</updated>
     </task>
-    <task id="LOCAL-00028" summary="Changes">
-      <created>1643716104193</created>
+    <task id="LOCAL-00028" summary="Fixed CreateNewGuardianAndAssignStudnetAction.java and AddStudentToClassAction.java">
+      <created>1643480068271</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1643716104193</updated>
+      <updated>1643480068271</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="poprawiłem config ze w razie blednego hasla czy loginu nie wywala bledu tylko grzecznie o tym informuje.">
+      <created>1643671429415</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1643671429415</updated>
+    </task>
+    <task id="LOCAL-00030" summary="( ͡° ͜ʖ ͡°)">
+      <created>1643672730141</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1643672730141</updated>
+    </task>
+    <task id="LOCAL-00031" summary="poprawiłem labele akcji">
+      <created>1643673279527</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1643673279527</updated>
+    </task>
+    <task id="LOCAL-00032" summary="na wszelki wypadek">
+      <created>1643674848486</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1643674848486</updated>
+    </task>
+    <task id="LOCAL-00033" summary="02:00 - jeszcze nie mam dosyc do 4:00 sie wyrobie walne yerbe i bedzie git">
+      <created>1643677270844</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1643677270844</updated>
+    </task>
+    <task id="LOCAL-00034" summary="2:12 cały czas do przodu, nie chce mi sie spac">
+      <created>1643677957188</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1643677957188</updated>
+    </task>
+    <task id="LOCAL-00035" summary="2:50 kurna zaraz bedzie jasno a tu tyle bledow">
+      <created>1643680253086</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1643680253086</updated>
+    </task>
+    <task id="LOCAL-00036" summary="3:05 passsssss">
+      <created>1643681122964</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1643681122964</updated>
+    </task>
+    <task id="LOCAL-00037" summary="3:55 - wyłaczam komputer jutro konczymy">
+      <created>1643684115048</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1643684115048</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,12 +392,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="Guardian i admin interfejsy" />
-    <MESSAGE value="Naprawiłem błąd przy ładowaniu view i wszystko śmiga" />
-    <MESSAGE value="Wyświetla od teraz oceny" />
-    <MESSAGE value="jestem złodziejem ale z gracją więc no" />
-    <MESSAGE value="DisplayAllAbsenceOfMyStudentsAction.java done." />
-    <MESSAGE value="ExhibitIfmyStudentsHaveLowAbsenceAction.java done :)" />
     <MESSAGE value="SendExcuseToTeacherAction.java done :)" />
     <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
     <MESSAGE value="DisplayyAllPersonsAction.java - done :)" />
@@ -345,8 +407,17 @@
     <MESSAGE value="Fixed errors and exceptions catched" />
     <MESSAGE value="Principal Actions all debugged and fixed if needed." />
     <MESSAGE value="Student actions fixed and debugged" />
-    <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="Fixed CreateNewGuardianAndAssignStudnetAction.java and AddStudentToClassAction.java" />
+    <MESSAGE value="poprawiłem config ze w razie blednego hasla czy loginu nie wywala bledu tylko grzecznie o tym informuje." />
+    <MESSAGE value="( ͡° ͜ʖ ͡°)" />
+    <MESSAGE value="poprawiłem labele akcji" />
+    <MESSAGE value="na wszelki wypadek" />
+    <MESSAGE value="02:00 - jeszcze nie mam dosyc do 4:00 sie wyrobie walne yerbe i bedzie git" />
+    <MESSAGE value="2:12 cały czas do przodu, nie chce mi sie spac" />
+    <MESSAGE value="2:50 kurna zaraz bedzie jasno a tu tyle bledow" />
+    <MESSAGE value="3:05 passsssss" />
+    <MESSAGE value="3:55 - wyłaczam komputer jutro konczymy" />
+    <option name="LAST_COMMIT_MESSAGE" value="3:55 - wyłaczam komputer jutro konczymy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

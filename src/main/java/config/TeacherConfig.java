@@ -17,7 +17,10 @@ public class TeacherConfig implements Config{
     @Override
     public List<Action> inicializactions() {
         System.out.println("Logged as teacher.");
-        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new InboxAction(), new AddStudentToClassAction(),new CauseMultipleCertificateAction(),new CreateNewGuardianAndAssignStudnetAction(),new GenerateCertificateForAllStudentsAction(),new GenerateStudentCertificateAction(),new InsertStudentToGuardian(),new MakeNewStudentAction(),new ModifyGradeAction(),new VerifyStudentsAbsenceAction()};
+        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),
+                new InboxAction(), new AddGradeAction(), new AddStudentToClassAction(),
+                new CauseMultipleCertificateAction(),
+                new CreateNewGuardianAndAssignStudnetAction(),new GenerateCertificateForAllStudentsAction(),new GenerateStudentCertificateAction(),new InsertStudentToGuardian(),new MakeNewStudentAction(),new ModifyGradeAction(),new VerifyStudentsAbsenceAction()};
 
         List<Action> actions= Arrays.asList(helper);
         return actions;
