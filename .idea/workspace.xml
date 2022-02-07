@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/TeacherConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddGradeAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/TeacherActions/AddGradeAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UserActions/InboxAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UserActions/InboxAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/AdminConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/AdminConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/GuardianConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/GuardianConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/PrincipalConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/PrincipalConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/StudentConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/StudentConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/TeacherConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/TeacherConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/TeacherActions/InsertStudentToGuardian.class" afterDir="false" />
+    <list default="true" id="14908605-fe61-412e-a6c9-136a8e1280e0" name="Changes" comment="problem number 2 solved">
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrincipalActions/CreateNewClassAndAssignToTeacherAction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643684115048</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="problem number 2 solved">
+      <created>1644252977937</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1644252977937</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,7 +390,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <MESSAGE value="SendExcuseToTeacherAction.java done :)" />
     <MESSAGE value="CreateNewClassAndAssignToTeacherAction.java - done :)&#10;&#10;o właśnie ja tu robię wszystko a ty się opierdzielasz, sami widzicie jak jest, zaraz mnie tu nie będzie, tylko żreć i nic więcej" />
     <MESSAGE value="DisplayyAllPersonsAction.java - done :)" />
     <MESSAGE value="ExecuteClassesAndStudentsAction.java - done :)" />
@@ -417,7 +414,8 @@
     <MESSAGE value="2:50 kurna zaraz bedzie jasno a tu tyle bledow" />
     <MESSAGE value="3:05 passsssss" />
     <MESSAGE value="3:55 - wyłaczam komputer jutro konczymy" />
-    <option name="LAST_COMMIT_MESSAGE" value="3:55 - wyłaczam komputer jutro konczymy" />
+    <MESSAGE value="problem number 2 solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="problem number 2 solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
