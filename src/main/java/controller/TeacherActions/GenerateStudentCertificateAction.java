@@ -1,7 +1,7 @@
 package controller.TeacherActions;
 
 import controller.Action;
-import controller.GenerateCertificate;
+import controller.RepositoryHelper;
 import controller.SQLController;
 import model.peoplesRoles.Student;
 import repository.StudentDAO;
@@ -11,7 +11,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -58,7 +57,7 @@ public class GenerateStudentCertificateAction implements Action {
         int index=1;
 
 
-            GenerateCertificate generateCertificate = new GenerateCertificate();
+            RepositoryHelper repositoryHelper = new RepositoryHelper();
             String getuserNameAndSurnameQuery="SELECT name,surname FROM dziennik.users where user_id="+student.userId+";";
             try {
                 ResultSet resultSet = statement.executeQuery(getuserNameAndSurnameQuery);
@@ -73,7 +72,7 @@ public class GenerateStudentCertificateAction implements Action {
             }
 
             try {
-                generateCertificate.executeQuery(choice);
+                repositoryHelper.generateCertificate(choice);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }

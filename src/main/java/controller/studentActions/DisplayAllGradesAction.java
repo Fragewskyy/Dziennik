@@ -10,7 +10,7 @@ public class DisplayAllGradesAction implements Action {
     @Override
     public void executeQuery() throws SQLException {
         String query =
-                "Select student_id from student where user_id = (select user_id from users where login = '" + MainView.getLogin() +
+                "Select student_id from dziennik.student where user_id = (select user_id from users where login = '" + MainView.getLogin() +
         "')";
 
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);

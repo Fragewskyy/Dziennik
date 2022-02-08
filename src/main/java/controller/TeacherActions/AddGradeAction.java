@@ -1,6 +1,7 @@
 package controller.TeacherActions;
 
 import controller.Action;
+import controller.RepositoryHelper;
 import controller.SQLController;
 import model.peoplesRoles.Student;
 import repository.StudentDAO;
@@ -24,27 +25,11 @@ public class AddGradeAction  implements Action {
         System.out.println("Select student you want to add a grade");
         Scanner scanner = new Scanner(System.in);
         String teacherid=teacherdao.getteacherid(MainView.getLogin());
-        try {
-            int iter=0;
-            for (Student student : studentDAO.getAll()) {
-                iter += 1;
-                String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
-                        "student_id = " + student.studentId + ");";
-                Connection connection=SQLController.Connect();
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery(query);
-                resultSet.next();
-                try {
-                    System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
-                } catch (SQLException e) {
-                    System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
-                }
-            }
+        RepositoryHelper repositoryHelper = new RepositoryHelper();
+        repositoryHelper.showStudentList();
 
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
+
         int choice=scanner.nextInt();
         int studentid= 0;
         try {

@@ -3,7 +3,7 @@
         package controller.TeacherActions;
 
         import controller.Action;
-        import controller.GenerateCertificate;
+        import controller.RepositoryHelper;
         import controller.SQLController;
         import model.peoplesRoles.Student;
         import repository.StudentDAO;
@@ -21,7 +21,7 @@ public class CauseMultipleCertificateAction implements Action {
     @Override
     public void executeQuery() {
         StudentDAO studentDAO = new StudentDAO();
-        System.out.println("SELECT students(write numbers with commas ");
+        System.out.println("SELECT students(write numbers with commas) ");
         ArrayList<Student> studentschoicelist = null;
         try {
             studentschoicelist = studentDAO.getAll();
@@ -29,23 +29,23 @@ public class CauseMultipleCertificateAction implements Action {
             throwables.printStackTrace();
         }
         int index=1;
-
+        RepositoryHelper repositoryHelper = new RepositoryHelper();
         for (Student student : studentschoicelist) {
-            GenerateCertificate generateCertificate = new GenerateCertificate();
-            String getuserNameAndSurnameQuery="SELECT name,surname FROM dziennik.users where user_id="+student.userId+";";
+
+            String getuserNameAndSurnameQuery = "SELECT name,surname FROM dziennik.users where user_id=" + student.userId + ";";
             try {
-                Connection connection= SQLController.Connect();
-                Statement statement= connection.createStatement();
+                Connection connection = SQLController.Connect();
+                Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(getuserNameAndSurnameQuery);
-                while (resultSet.next()) {
-                    System.out.println(index+":"+resultSet.getString("name")+" "+resultSet.getString("surname"));
-                    index++;
-                }
+                resultSet.next();
+                System.out.println(index + ":" + resultSet.getString("name") + " " + resultSet.getString("surname"));
+                index++;
 
 
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
+        }
             Scanner scanner = new Scanner(System.in);
             List<String> studentindexes = Arrays.asList(scanner.next().split(","));
             for(String studentid:studentindexes) {
@@ -54,12 +54,12 @@ public class CauseMultipleCertificateAction implements Action {
 
 
                 try {
-                    generateCertificate.executeQuery(selectedStudent.getStudentId());
+                    repositoryHelper.generateCertificate(selectedStudent.getStudentId());
                 } catch (SQLException throwables) {
                     throwables.printStackTrace();
                 }
             }
-        }
+
     }
 
     @Override

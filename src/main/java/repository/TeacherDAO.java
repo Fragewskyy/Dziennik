@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class TeacherDAO implements Dao{
     public String getteacherid( String login ){
-        String query="SELECT teacher_id  FROM dziennik.teacher where user_id=(SELECT user_id FROM dziennik.users where login='"+login+");";
+        String query="SELECT teacher_id  FROM dziennik.teacher where user_id=(SELECT user_id FROM dziennik.users where login='"+login+"')";
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);

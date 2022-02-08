@@ -1,19 +1,11 @@
 package controller.TeacherActions;
 
 
-import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.text.pdf.draw.DottedLineSeparator;
-import com.itextpdf.text.pdf.parser.Path;
-import com.sun.scenario.effect.ImageData;
 import controller.Action;
-import controller.GenerateCertificate;
+import controller.RepositoryHelper;
 import controller.SQLController;
 import repository.ClassDAO;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -76,9 +68,9 @@ public class GenerateCertificateForAllStudentsAction implements Action {
 
         for(int studentid:classStudents) {
 
-            GenerateCertificate generateCertificate = new GenerateCertificate();
+            RepositoryHelper repositoryHelper = new RepositoryHelper();
             try {
-                generateCertificate.executeQuery(studentid);
+                repositoryHelper.generateCertificate(studentid);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
