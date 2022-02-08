@@ -58,7 +58,7 @@ public class SendExcuseToTeacherAction implements Action {
                             "subjectname") + " " +
                             " | Date: " + resultSet.getDate("date"));
                     absences.add(iter - 1,
-                            (iter + ". Student: " + user.name + " " + user.surname + " | Subject: " + resultSet.getString(
+                            ("Student: " + user.name + " " + user.surname + " | Subject: " + resultSet.getString(
                                     "subjectname") + " " +
                                     " | Date: " + resultSet.getDate("date"))+"\n");
                 }
@@ -124,7 +124,7 @@ public class SendExcuseToTeacherAction implements Action {
             String subject = "Excuse.";
 
             String queryOfFindingTeacher = "select teacher_id from classes where classes.class_id = (select class_id " +
-                    "from student where student_id = 4)";
+                    "from student where student_id = " + studentId + ")";
             ResultSet resultSet2 = statement.executeQuery(queryOfFindingTeacher);
 
             resultSet2.next();
@@ -141,9 +141,6 @@ public class SendExcuseToTeacherAction implements Action {
             System.out.println("DONE!");
 
         }
-        
-
-
     }
 
     @Override
