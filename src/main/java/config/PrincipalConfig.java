@@ -17,12 +17,7 @@ public class PrincipalConfig implements Config{
     @Override
     public List<Action> inicializactions() {
         System.out.println("Logged as principal.");
-        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction()
-
-                ,new CreateNewClassAndAssignToTeacherAction(),new DisplayyAllPersonsAction(),new ExecuteClassesAndStudentsAction(),new SetNumberOffLessonsAction(),new SetUpTeacherAction(),new DisplayAllTeachers()};
-
-                ,new InboxAction(), new CreateNewClassAndAssignToTeacherAction(),new DisplayyAllPersonsAction(),
-                new ExecuteClassesAndStudentsAction(),new SetNumberOffLessonsAction(),new SetUpTeacherAction()};
+        Action helper[]=new Action[] {new ChangePasswordAction(), new LogOutAction(),new SendTextMessegeAction(),new CreateNewClassAndAssignToTeacherAction(),new DisplayyAllPersonsAction(),new ExecuteClassesAndStudentsAction(),new SetNumberOffLessonsAction(),new SetUpTeacherAction(),new DisplayAllTeachers(),new InboxAction(), new CreateNewClassAndAssignToTeacherAction(),new DisplayyAllPersonsAction(),new ExecuteClassesAndStudentsAction(),new SetNumberOffLessonsAction(),new SetUpTeacherAction()};
 
 
         List<Action> actions= Arrays.asList(helper);
