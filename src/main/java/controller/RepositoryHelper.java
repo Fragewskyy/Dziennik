@@ -4,6 +4,9 @@ package controller;
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfWriter;
+import model.peoplesRoles.Student;
+import repository.StudentDAO;
+import repository.UserDAO;
 
 import java.io.FileOutputStream;
 import java.sql.Connection;
@@ -11,10 +14,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class GenerateCertificate {
+public class RepositoryHelper {
 
 
-    public void executeQuery(Integer studentid) throws SQLException {
+    public void generateCertificate(Integer studentid) throws SQLException {
         System.out.println("dizała");
         Rectangle pageSize = new Rectangle(800,1000);
         pageSize.setBackgroundColor(new BaseColor(0xFF, 0xFF, 0xDE));
@@ -70,9 +73,29 @@ public class GenerateCertificate {
         }
         document.close();
     }
+    public void showStudentList() {
+        StudentDAO studentDAO = new StudentDAO();
+        UserDAO userDAO = new UserDAO();
+        int iter = 0;
+        try {
+            for (Student student : studentDAO.getAll()) {
+                iter += 1;
+                String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
+                        "student_id = " + student.studentId + ");";
+                Connection connection = SQLController.Connect();
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(query);
 
+                try {
 
-    public String getlabel() {
-        return null;
+                    resultSet.next();
+                    System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
+                } catch (SQLException e) {
+                    System.out.println(iter + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
+                }
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
     }
 }

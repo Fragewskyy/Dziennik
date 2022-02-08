@@ -1,6 +1,7 @@
 package controller.TeacherActions;
 
 import controller.Action;
+import controller.RepositoryHelper;
 import controller.SQLController;
 import model.User;
 import model.peoplesRoles.Student;
@@ -23,19 +24,9 @@ public class AddStudentToClassAction implements Action {
         StudentDAO studentDAO = new StudentDAO();
         Connection connection = DriverManager.getConnection(SQLController.URL, SQLController.USERNAME,SQLController.PASSWORD);
         Statement statement = connection.createStatement();
+        RepositoryHelper repositoryHelper=new RepositoryHelper();
+        repositoryHelper.showStudentList();
 
-        for (Student student : studentDAO.getAll()) {
-
-            String query = "SELECT class_name from classes WHERE class_id = (select class_id from student where " +
-                    "student_id = " + student.studentId + ");";
-            ResultSet resultSet = statement.executeQuery(query);
-            resultSet.next();
-            try {
-                System.out.println(student.studentId + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Current class: " + resultSet.getString("class_name"));
-            } catch (SQLException e) {
-                System.out.println(student.studentId + ". " + userDAO.get(student.userId).name + " " + userDAO.get(student.userId).surname + " | Not assigned to any class");
-            }
-        }
         int choice;
 
         while (true) {
